@@ -40,7 +40,9 @@ Order:
 - Thursday Delta;
 - Friday Epsilon.
 
-Use a restrained footer on student pages to aid collation: `<Group> | copy <n> of 7 | page <p> of <total>`. Keep the assessed profile off student pages.
+Use a restrained footer on student pages to aid collation: `<Group> | copy <n> of 7 | page <p> of <total>`.
+
+Student-facing slides and printables identify the group only by its Greek name. Do not display `very low`, `low`, `at level`, `above level`, `Year 9 reading level`, equivalent difficulty language, assessed profiles, explanatory group descriptions, or a key that maps Greek names to levels. These details may appear on teacher sheets and internal records only.
 
 ## Shared Reading deck
 
