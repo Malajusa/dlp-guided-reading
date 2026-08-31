@@ -56,7 +56,7 @@ Use the fixed assessed profiles in [group-profiles.md](references/group-profiles
 - Thursday: Delta
 - Friday: Epsilon
 
-Teacher assessment is authoritative. Do not reassess students, change membership, rename groups, infer new placements, or weaken Epsilon to Year 4/5 reading complexity. Student-facing pages show only the Greek group name; assessed descriptions remain teacher-facing.
+Teacher assessment is authoritative. Do not reassess students, change membership, rename groups, infer new placements, or weaken Epsilon to Year 4/5 reading complexity. Student-facing slides and printables show only the Greek group name. Never show the assessed profile, reading level, difficulty band, day-to-level mapping, or an explanatory group description on student-facing material; those details are teacher-facing only.
 
 ## Create the actual PowerPoint outputs
 
