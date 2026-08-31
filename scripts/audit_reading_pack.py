@@ -37,6 +37,27 @@ EXPECTED_GROUPS = [
     ("Epsilon", "Friday", "Year 9 reading level", "none"),
 ]
 GROUP_WORDS = "|".join(group.lower() for group, _, _, _ in EXPECTED_GROUPS)
+STUDENT_LEVEL_VALUES = (
+    "very low",
+    "low",
+    "at level",
+    "above level",
+    "year 9 reading level",
+    "year 9 reading complexity",
+)
+STUDENT_LEVEL_VALUE_PATTERN = "|".join(
+    re.escape(value) for value in sorted(STUDENT_LEVEL_VALUES, key=len, reverse=True)
+)
+STUDENT_LEVEL_FIELD_RE = re.compile(
+    rf"\b(?:assessed\s+)?(?:reading\s+)?(?:profile|level|band)\s*[:\-]\s*"
+    rf"(?:{STUDENT_LEVEL_VALUE_PATTERN})\b",
+    re.I,
+)
+STUDENT_GROUP_LEVEL_RE = re.compile(
+    rf"\b(?:{GROUP_WORDS})\b\s*(?:\||[-:])\s*(?:{STUDENT_LEVEL_VALUE_PATTERN})\b"
+    rf"|\b(?:{STUDENT_LEVEL_VALUE_PATTERN})\b\s*(?:\||[-:])\s*\b(?:{GROUP_WORDS})\b",
+    re.I,
+)
 
 
 def qname(namespace: str, local: str) -> str:
@@ -113,6 +134,11 @@ class PptxDeck:
                 slide_xml = archive.read(part)
                 slide_root = ET.fromstring(slide_xml)
                 texts = [node.text or "" for node in slide_root.findall(".//a:t", NS)]
+                text_blocks = [
+                    normalise_text(" ".join(node.text or "" for node in shape.findall(".//a:t", NS)))
+                    for shape in slide_root.findall(".//p:sp", NS)
+                ]
+                text_blocks = [block for block in text_blocks if block]
 
                 rel_part = posixpath.join(
                     posixpath.dirname(part), "_rels", posixpath.basename(part) + ".rels"
@@ -146,6 +172,7 @@ class PptxDeck:
                 self.slides.append(
                     {
                         "text": normalise_text(" ".join(texts)),
+                        "text_blocks": text_blocks,
                         "editable_chars": len(normalise_text(" ".join(texts))),
                         "image_hashes": sorted(image_hashes),
                         "image_count": len(image_hashes),
@@ -169,6 +196,21 @@ class PptxDeck:
         page.pop("editable_chars", None)
         raw = json.dumps(page, sort_keys=True, separators=(",", ":")).encode("utf-8")
         return hashlib.sha256(raw).hexdigest()
+
+
+def student_level_labels(text_blocks: list[str]) -> list[str]:
+    """Return student-facing text blocks that expose assessed group levels."""
+
+    matches: list[str] = []
+    for block in text_blocks:
+        normalised = normalise_text(block).lower()
+        if (
+            normalised in STUDENT_LEVEL_VALUES
+            or STUDENT_LEVEL_FIELD_RE.search(block)
+            or STUDENT_GROUP_LEVEL_RE.search(block)
+        ):
+            matches.append(block)
+    return matches
 
 
 class Audit:
@@ -281,10 +323,17 @@ def validate_guided(deck: PptxDeck, manifest: dict[str, Any], audit: Audit) -> l
         min_chars = int(entry.get("min_editable_chars_per_student_page", 80))
         for copy_number, (start, end) in enumerate(ranges, start=1):
             for slide_number in range(start, end + 1):
-                if deck.page(slide_number)["editable_chars"] < min_chars:
+                page = deck.page(slide_number)
+                if page["editable_chars"] < min_chars:
                     audit.error(
                         f"{prefix}: copy {copy_number} slide {slide_number} has fewer than "
                         f"{min_chars} editable text characters"
+                    )
+                exposed_labels = student_level_labels(page["text_blocks"])
+                if exposed_labels:
+                    audit.error(
+                        f"{prefix}: copy {copy_number} slide {slide_number} exposes a "
+                        f"teacher-only group level: {exposed_labels!r}"
                     )
 
         canonical_text = " ".join(
@@ -475,6 +524,7 @@ def main(argv: list[str] | None = None) -> int:
             "Confirm teacher/student passage, question, answer, and evidence parity",
             "Confirm factual, cultural, Health-safety, and source integrity",
             "Confirm genuine Alpha-Epsilon differentiation and visual usefulness",
+            "Confirm student-facing slides use only Greek group names and expose no group levels",
             "Confirm print preview yields one teacher sheet and seven complete student sets per group",
         ],
     }
