@@ -1,60 +1,54 @@
 ---
 name: dlp-guided-reading
-description: Generate curriculum-aligned Guided Reading instruction and matched teacher and student booklet content for teacher-assigned Alpha-Epsilon groups within the Daily Lesson Pack. Use for a scheduled group session or a complete differentiated sequence; do not use to assess students, form groups, rename groups, or alter teacher placements.
+description: Generate and quality-assure next-week Shared Reading and differentiated Alpha-Epsilon Guided Reading PowerPoint packs for a WA Year 4/5 class within the Daily Lesson Pack. Use for weekly reading-pack planning or production; do not assess students, change teacher placements, or generate a generic daily reading passage.
 ---
 
-# Guided Reading
+# Weekly Shared and Guided Reading Pack
 
-Create evidence-informed small-group reading instruction while preserving the teacher's assessment and placement decisions. Treat [the production standard](references/production-standard.md) as the governing design authority.
+Create the following teaching week's coordinated reading pack. Reading instruction is the priority; HASS, Health, and Design and Technologies supply worthwhile knowledge and contexts.
 
-## Establish the lesson context
+Read the references required by the task:
 
-Resolve these inputs before writing:
+- Always read [the production standard](references/production-standard.md).
+- Read [the curriculum map](references/curriculum-map.md) when selecting or checking a weekly topic, genre, or curriculum alignment.
+- Read [the group profiles](references/group-profiles.md) before writing any Alpha-Epsilon text or teacher guidance.
+- Read [the PowerPoint pack contract](references/powerpoint-pack-contract.md) before creating, revising, or auditing files.
+- Read [the Daily Lesson Pack integration contract](references/daily-lesson-pack-integration.md) only when packaging, installing, or changing umbrella routing.
 
-- term and week
-- scheduled group or requested Alpha-Epsilon set
-- current HASS, Health, or Technologies curriculum topic
-- current Writing text type and the features being explicitly taught
-- relevant prior knowledge and previously taught vocabulary
-- available session time
+## Resolve the week
 
-Use the authoritative whole-year plan or active lesson-plan record when one is supplied. Do not guess the current curriculum progression. If a required context cannot be discovered, ask one concise blocking question.
+The normal production run occurs on Monday morning for the following teaching week. Resolve the target dates, term, week, school interruptions, current plan, and any recorded assessment priorities from authoritative local sources. Do not treat the computer date alone as proof of the teaching week.
 
-Accept Alpha, Beta, Gamma, Delta, or Epsilon as the teacher-authorised group. Do not challenge, relabel, or reinterpret the placement. Keep assessed bands and other diagnostic information teacher-facing; student materials show only the Greek group name.
+Use this source order:
 
-## Build the instructional sequence
+1. the user's current instruction;
+2. explicit lesson-status or assessment updates;
+3. the authoritative timetable and calendar;
+4. detailed weekly plans;
+5. the whole-year plan and [curriculum map](references/curriculum-map.md);
+6. standing defaults in this skill.
 
-1. Define a common intellectual spine: the curriculum knowledge, writing connection, essential vocabulary, central meaning, and evidence students must understand.
-2. Create a structured source containing the passage, vocabulary and morphology, planned prompts, questions, answers, evidence locations, misconceptions, and next-step notes.
-3. When creating a full set, write five genuine versions from that common blueprint. Differentiate through decoding and morphology demands, vocabulary, syntax, cohesion, paragraph density, background-knowledge support, inference, ambiguity, text structure, and response depth. Do not treat word count alone as differentiation.
-4. Follow the core sequence: retrieval and vocabulary; explicit teacher model; supported first reading; purposeful rereading; evidence-based discussion; transfer to the current Writing focus; teacher-recorded next step.
-5. Derive the teacher and student materials from the same structured source so every question, answer, prompt, and evidence location remains in parity.
-6. Verify factual and cultural claims, especially HASS, Health, and Technologies content. Do not invent curriculum facts, sources, quotations, statistics, or cultural authority.
+If no detailed weekly plan exists for Weeks 1-6, select and sequence a suitable subtopic from the term curriculum. Record the selection and rationale in the teacher-facing source record. After Week 6, assessment evidence determines the reading focus; use curriculum-area balance only as a tie-breaker when multiple texts serve the same need.
 
-## Produce teacher material
+## Build one coordinated weekly sequence
 
-Include:
+Establish one weekly blueprint before drafting:
 
-- curriculum and Writing connections
-- learning intention and observable success criteria
-- vocabulary and morphology teaching
-- required background knowledge
-- a brief explicit model or think-aloud
-- session procedure and purposeful stopping points
-- literal, inferential, evaluative, and text-structure questions as appropriate to the group
-- answers with acceptable evidence, likely misconceptions, and responsive prompts
-- a quick assessment record and an actionable next step
-- an optional short Writing transfer task when it strengthens the lesson
+- curriculum source area and precise topic;
+- essential facts, concepts, vocabulary, and source evidence;
+- current Writing genre and useful features during Weeks 1-6;
+- whole-class comprehension model for Shared Reading;
+- common conceptual spine for Guided Reading;
+- group-specific reading targets and access controls;
+- visual purposes and cultural or safety constraints.
 
-## Produce student material
+Shared and Guided Reading must use distinct passages. They may share the topic, genre, knowledge, and selected vocabulary. Shared Reading explicitly models a useful meaning-making move; Guided Reading provides five genuine rewrites through which students apply or extend the learning at the teacher-assigned level.
 
-Provide an inviting, age-respectful booklet that students can navigate during instruction. Include the complete group-specific passage, only the supports students need, and any response space or task the teacher will actually use. Keep all instructional text editable, selectable, searchable, and compatible with screen readers.
+Generate from one structured source record so student passages, teacher prompts, answers, evidence locations, visuals, citations, and slide ranges remain in parity. Do not draft the teacher sheet from memory after laying out student pages.
 
-Use one legible type family and stable hierarchy. Keep illustrations separate from text. Default booklet production to A4 landscape pages designed as two facing A5 pages unless the user supplies another approved format.
+## Preserve teacher-assigned groups
 
-## Respect timetable and component boundaries
-
-Use the established rotation unless the authoritative timetable says otherwise:
+Use the fixed assessed profiles in [group-profiles.md](references/group-profiles.md):
 
 - Monday: Alpha
 - Tuesday: Beta
@@ -62,19 +56,35 @@ Use the established rotation unless the authoritative timetable says otherwise:
 - Thursday: Delta
 - Friday: Epsilon
 
-A missed session remains not taught unless the teacher explicitly requests rescheduling. Do not create relief-teacher guidance unless asked. Keep Guided Reading separate from Morning Work, Literacy Warm-up, Shared Reading, and independent reading components.
+Teacher assessment is authoritative. Do not reassess students, change membership, rename groups, infer new placements, or weaken Epsilon to Year 4/5 reading complexity. Student-facing pages show only the Greek group name; assessed descriptions remain teacher-facing.
 
-## Apply blocking quality gates
+## Create the actual PowerPoint outputs
 
-Do not call a deliverable complete if any of these defects remain:
+Produce:
 
-- duplicated passages between groups where genuine differentiation was required
-- an incorrect group name or cover
-- teacher questions or answers that do not match the student passage
-- flattened, image-only, clipped, overlapping, or unreadably small instructional text
-- inconsistent or incorrect page geometry
-- unverified factual or cultural claims
-- a missing curriculum or Writing connection
-- a teacher booklet that cannot guide the session without reconstructing the lesson
+1. one Shared Reading PowerPoint for projection; and
+2. one editable Guided Reading print PowerPoint containing all five teacher sheets and seven complete student copies per group.
 
-When asked for files, create the actual editable booklets and requested exports rather than an outline. Render and inspect the finished artifacts before reporting that visual quality assurance passed.
+For PowerPoint authoring, use the installed Presentations skill and its required artifact-tool, source-note, rendering, overflow, and inspection workflow. The printable deck uses exact A4 landscape geometry. Keep reading text as editable PowerPoint text and keep visuals as separate replaceable objects; never flatten an instructional page into a full-slide image.
+
+The seven copies are embedded in the deck. Printing one copy of the complete presentation must yield one teacher sheet and seven complete student reading sets for each scheduled group. Do not tell the teacher to select seven copies in the print dialog.
+
+## Verify and release
+
+Maintain the layout manifest described in [the PowerPoint pack contract](references/powerpoint-pack-contract.md), then run:
+
+```text
+python scripts/audit_reading_pack.py --manifest <manifest.json> --guided-deck <guided.pptx> --shared-deck <shared.pptx> --out <audit.json>
+```
+
+Also render and inspect every slide at full size. Fix all errors before release. Structural success does not override weak differentiation, unsupported claims, cultural or Health-safety concerns, mismatched answers, unreadable pages, or unhelpful visuals.
+
+Release only the requested final PowerPoints and a concise teacher-facing summary. Retain source and audit records in the working folder unless the user asks for them.
+
+## Boundaries
+
+- A missed group remains `not taught` until the teacher reschedules it.
+- Relief packs omit Guided Reading unless the teacher explicitly requests otherwise.
+- Morning Work, Literacy Warm-up, Shared Reading, Guided Reading, and independent reading use genuinely different passages.
+- The weekly Monday workflow is a production contract, not permission to create or modify a scheduler. Configure automation only when explicitly requested.
+- The supplied Technologies curriculum covers Design and Technologies. Do not silently claim Digital Technologies alignment.

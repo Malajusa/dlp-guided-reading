@@ -1,105 +1,125 @@
-# Alpha-Epsilon Guided Reading Production Standard
+# Shared and Guided Reading Production Standard
 
-Status: Governing development standard, version 1.0. The skill remains a development component until it passes release review and is deliberately integrated into the Daily Lesson Pack umbrella.
+Status: governing development standard, version 2.0. This skill remains a development component until it passes release review and is deliberately integrated into the Daily Lesson Pack umbrella.
 
-## 1. Scope and authority
+## 1. Instructional priority
 
-The skill generates instruction and resources. It does not assess students, form groups, rename groups, change membership, challenge teacher placement, or infer printing quantities.
+This is a reading program informed by curriculum content, not a HASS, Health, or Technologies worksheet delivered through a passage. English reading demands, the current Writing genre, and teacher-identified reading needs control text design and teaching. Curriculum content supplies knowledge, settings, authentic problems, perspectives, processes, and vocabulary.
 
-Teacher assessment is authoritative. The authorised student-facing names are Alpha, Beta, Gamma, Delta, and Epsilon. Diagnostic descriptions and assessed bands may inform teacher-facing design but must not appear in student materials.
+For information texts, curriculum content may be explicit. In narrative, content should normally shape the setting, constraints, decisions, or consequences without becoming an artificial factual insert. In persuasive texts, use evidence and genuine viewpoints without manufacturing a simplistic controversy.
 
-## 2. Rotation
+## 2. Weekly relationship between components
 
-The default timetable is Monday Alpha, Tuesday Beta, Wednesday Gamma, Thursday Delta, and Friday Epsilon. Honour a supplied authoritative timetable when it differs. A missed session is recorded as not taught and is not automatically rescheduled.
+Shared Reading and Guided Reading belong to one weekly blueprint but perform different work.
 
-## 3. Required planning inputs
+### Shared Reading
 
-Resolve the term and week, requested group or full set, current HASS/Health/Technologies curriculum topic, current Writing text type and focus features, relevant prior knowledge and vocabulary, and available session duration.
+- whole-class, teacher-mediated access to a rich text;
+- builds relevant knowledge and vocabulary;
+- explicitly models the week's selected comprehension or text-analysis move;
+- uses short projected paragraphs;
+- places exactly one paragraph-specific question on each question slide;
+- follows every question slide immediately with its matched model-answer slide;
+- keeps every answer and inference within evidence supplied by the displayed paragraph.
 
-The whole-year plan or active planning record is the source of truth for live progression. If current context is unavailable, do not infer it from stale examples.
+### Guided Reading
 
-## 4. Common intellectual spine
+- five distinct texts built from a common conceptual spine;
+- applies or extends the Shared Reading learning at each assessed profile;
+- provides group-specific vocabulary, morphology, fluency, comprehension, and response demands;
+- uses a separate passage from Shared Reading and every other Daily Lesson Pack component;
+- supports teacher judgement rather than scripting every utterance.
 
-All five groups encounter the same worthwhile curriculum idea and broadly comparable conceptual destination. Establish a shared blueprint before differentiation: essential knowledge, key vocabulary, central meaning, evidence students need, text-type connection, and intended transfer to Writing.
+Shared Reading must not reveal the evidence students are expected to locate independently in Guided Reading.
 
-## 5. Genuine differentiation
+## 3. Common intellectual spine and genuine rewrites
 
-Each group receives a genuine rewrite, not a passage with superficial word substitutions. Control the interaction of:
+Before writing group texts, define:
 
-- decoding load and word recognition demands
-- morphology and word-family support
-- vocabulary rarity, abstraction, and explanation
-- sentence length, clause structure, and syntactic complexity
-- cohesion, pronoun tracking, connectives, and referents
-- paragraph density and information packing
-- background-knowledge demands and supplied context
-- inference distance and evidence integration
-- ambiguity and competing interpretations
-- text organisation, navigation, and response depth
+- essential knowledge and central meaning;
+- source-supported facts and qualifications;
+- current genre and useful language or structural features;
+- essential vocabulary and word families;
+- intended comprehension opportunity;
+- visual information students may use;
+- evidence students must locate, connect, infer, or evaluate.
 
-Word count and nominal reading age are insufficient by themselves. Difficulty should arise from an intentional combination of these features while preserving age-respectful content.
+Every group receives a genuine rewrite. Preserve a comparable conceptual destination while deliberately controlling decoding, morphology, vocabulary, syntax, cohesion, paragraph density, background knowledge, inference distance, ambiguity, text structure, navigation, fluency demand, and response depth. Word count alone is not differentiation.
 
-## 6. Writing connection
+## 4. Core Guided Reading sequence
 
-The reading must exemplify or illuminate the current Writing text type. Select useful structural and language features for students to notice, discuss, and, where appropriate, transfer. Do not distort the curriculum content merely to force a text-type feature.
+Each teacher sheet supports:
 
-## 7. Core teaching sequence
+1. brief activation of essential knowledge;
+2. high-value vocabulary or morphology teaching;
+3. a precise teacher model or think-aloud;
+4. supported first reading with purposeful stopping points;
+5. targeted rereading for fluency, cohesion, structure, vocabulary, or evidence;
+6. evidence-based discussion;
+7. concise transfer to the current Writing focus during Weeks 1-6;
+8. one manageable assessment note and actionable next step.
 
-Every planned session follows this instructional logic:
+Adapt pacing responsively. Do not force every question type into every session.
 
-1. activate relevant knowledge and pre-teach high-value vocabulary or morphology
-2. state and model a precise reading strategy or meaning-making move
-3. support a first reading with planned prompts and stopping points
-4. reread selected sections for fluency, vocabulary, cohesion, structure, or evidence
-5. discuss questions that require students to locate, connect, and justify evidence
-6. make a concise transfer to the current Writing focus
-7. record observable evidence and a next instructional step
+## 5. Teacher sheet
 
-The teacher may adapt pacing responsively. The booklet supports professional judgement rather than scripting every utterance.
+Provide exactly one A4 landscape teacher sheet for each group. It must be teachable without reconstructing the lesson and contain, in a concise printable layout:
 
-## 8. Teacher booklet contract
+- term, week, day, group, assessed profile, curriculum source, topic, and genre;
+- learning intention and observable success criteria;
+- required background knowledge;
+- vocabulary and morphology;
+- model or think-aloud;
+- reading procedure and stopping points;
+- questions, expected answers, and acceptable evidence;
+- likely misconception and responsive prompt where useful;
+- fluency or rereading direction;
+- Writing connection during Weeks 1-6;
+- assessment evidence and next-step field;
+- compact source record where claims or visuals require it.
 
-The teacher booklet must include curriculum and Writing links, learning intention, observable success criteria, vocabulary and morphology, required background knowledge, explicit modelling, procedure, planned stops, graduated questions, answers, acceptable evidence, misconceptions, responsive prompts, assessment notes, and next-step guidance. An optional Writing task is included only when it adds instructional value.
+Questions and answers must match the final student text exactly.
 
-It must be possible to teach the session directly from the booklet without reverse-engineering the student resource.
+## 6. Student reading
 
-## 9. Student booklet contract
+Student pages contain the complete group-specific passage, relevant title and group name, purposeful visuals at the authorised support level, stable pagination, and only the response direction or space the session uses. Do not add disposable cover or divider pages unless requested.
 
-The student booklet contains the complete group-specific reading and only the supports and response tasks needed in the session. It uses the Greek group name without comparative or deficit labels. Content remains engaging, respectful, and conceptually connected across the set.
+Use age-respectful content for every group. Lower reading access must not produce infantile subject matter, and Year 9 reading complexity for Epsilon must not introduce Year 9 curriculum or age-inappropriate content.
 
-## 10. Shared-source parity
+## 7. Factual, cultural, and Health integrity
 
-Teacher and student materials are generated from one structured source. Passage wording, page references, vocabulary, questions, answers, evidence locations, and task directions must agree exactly. Changes to the passage require regeneration or rechecking of every dependent teacher element.
+Verify non-trivial claims and illustrations with credible primary or authoritative sources. Record URLs, titles, dates, and qualifications in the source record and PowerPoint speaker notes.
 
-## 11. Visual and accessibility standard
+For Aboriginal and Torres Strait Islander histories, cultures, knowledge, and perspectives, do not invent cultural authority, homogenise groups, fictionalise restricted or culturally sensitive knowledge, or treat contested claims as settled. Prefer community-specific authoritative sources where available.
 
-Default to A4 landscape pages composed as two facing A5 pages. Use consistent geometry, a single highly legible type family, stable hierarchy, sufficient white space, and classroom-readable sizing. Keep illustrations separate from text.
+Health topics involving puberty, consent, private-body safety, abuse, or explicit harmful online scenarios require explicit teacher selection. Do not select them automatically. Safer default Health contexts include resilience, emotions, inclusion, respect, help-seeking, reliable health messages, healthy choices, safety planning, movement, and fair play.
 
-Instructional text must remain editable, selectable, searchable, and screen-reader accessible. Flattened page images are not an acceptable substitute. Exported PDFs must be rendered and visually inspected for clipping, overlap, missing glyphs, incorrect covers, and page-size drift.
+## 8. Accessibility and visuals
 
-## 12. Factual and cultural integrity
+Keep all instructional text editable, selectable, searchable, and screen-reader compatible. Use one highly legible body typeface, strong contrast, adequate white space, and consistent hierarchy. Visuals must add comprehension value, remain separate from text, and never disclose an answer students are meant to infer.
 
-Verify claims and illustrations against appropriate authoritative sources. Treat Aboriginal and Torres Strait Islander histories, cultures, knowledge, and perspectives with particular care: do not invent cultural authority, homogenise groups, or present contested knowledge as universal. Record sources and qualifications in teacher-facing notes where they matter.
+Apply the visual-support rules in [group-profiles.md](group-profiles.md). Epsilon receives no decorative or narrative illustration. A functional scientific or technical diagram is permitted only when it is necessary to interpret the text and is declared in the manifest.
 
-## 13. Daily Lesson Pack boundaries
+## 9. Status and timetable
 
-Guided Reading is its own component. It does not absorb Morning Work, Literacy Warm-up, Shared Reading, or independent reading. Relief guidance and automatic rescheduling are out of scope unless the teacher explicitly requests them.
+Default rotation is Monday Alpha, Tuesday Beta, Wednesday Gamma, Thursday Delta, and Friday Epsilon. Honour an explicit authoritative timetable update. A missed session is `not taught` and is not automatically advanced or rescheduled. Relief packs omit Guided Reading unless explicitly requested.
 
-## 14. Blocking release gates
+## 10. Blocking failures
 
-Fail the output when any of the following occurs:
+Do not release when any of these remain:
 
-- duplicated passages where group-specific rewrites were required
-- incorrect group names, covers, or timetable assignment
-- teacher/student mismatch
-- inaccessible flattened instructional text
-- unreadable typography, clipping, overlap, or inconsistent geometry
-- unsupported factual or cultural claims
-- missing curriculum or Writing alignment
-- insufficient guidance to teach the session
+- identical or cosmetically altered group passages;
+- incorrect group, day, assessed profile, or cover information;
+- Shared Reading passage reused in Guided Reading;
+- teacher/student question, answer, evidence, vocabulary, or pagination mismatch;
+- unsupported factual or cultural claims;
+- automatically selected sensitive Health content;
+- missing genre or curriculum connection during Weeks 1-6;
+- Epsilon decorative imagery;
+- flattened instructional text;
+- unreadable typography, clipping, overlap, broken image crop, or inconsistent geometry;
+- fewer or more than seven complete student sets for any group;
+- an incomplete teacher sheet;
+- a deck that has not passed deterministic checks and full rendered inspection.
 
-Automated checks should be used where possible, but they do not replace rendered visual inspection and professional review.
-
-## 15. Status of historical resources
-
-Earlier Alpha-Epsilon booklets and presentations are reference evidence only. They may inform effective component extraction, but they are not templates or canon. Known historical failure patterns include duplicated group passages, incorrect cover labels, mixed page geometry, and flattened text. Do not reproduce those defects or copy the historical resources into the skill package.
+Historical resources are evidence only. Known historical failures include Beta/Gamma duplication, a Delta cover inside Epsilon, mixed page geometry, and flattened text; none may be normalised as a template.

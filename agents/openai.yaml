@@ -1,4 +1,4 @@
 interface:
-  display_name: "Guided Reading"
-  short_description: "Create Alpha-Epsilon guided reading resources"
-  default_prompt: "Use $dlp-guided-reading to create curriculum-aligned Alpha-Epsilon guided reading instruction and matched teacher and student booklet content."
+  display_name: "Weekly Reading Pack"
+  short_description: "Build editable Shared and Guided Reading packs"
+  default_prompt: "Use $dlp-guided-reading to create next week's editable Shared Reading and Alpha-Epsilon Guided Reading PowerPoint pack."
