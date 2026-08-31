@@ -1,0 +1,4 @@
+interface:
+  display_name: "Guided Reading"
+  short_description: "Create Alpha-Epsilon guided reading resources"
+  default_prompt: "Use $dlp-guided-reading to create curriculum-aligned Alpha-Epsilon guided reading instruction and matched teacher and student booklet content."
