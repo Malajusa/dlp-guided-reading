@@ -193,6 +193,10 @@ class PptxDeck:
     def signature(self, one_based_slide: int) -> str:
         page = dict(self.page(one_based_slide))
         page["text"] = normalise_text(page["text"], ignore_copy_number=True)
+        page["text_blocks"] = [
+            normalise_text(block, ignore_copy_number=True)
+            for block in page.get("text_blocks", [])
+        ]
         page.pop("editable_chars", None)
         raw = json.dumps(page, sort_keys=True, separators=(",", ":")).encode("utf-8")
         return hashlib.sha256(raw).hexdigest()
