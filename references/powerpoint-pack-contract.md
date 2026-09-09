@@ -62,15 +62,18 @@ Keep paragraphs readable when projected. The complete answer is visually dominan
 Before layout, maintain a structured record containing:
 
 - target dates, term, week, and timetable;
+- prescribed Reading Focus, Learning Intention, and Success Criteria from `references/40-week-reading-overview.md`;
+- any explicit teacher-authorised departure from the overview, with the teacher instruction recorded verbatim or faithfully summarised;
 - curriculum source area, topic, codes where used, and selection rationale;
 - genre and specific Writing features;
-- weekly reading focus;
+- previously taught comprehension processes deliberately spiralled into the week's reading;
+- intended evidence distance and response depth;
 - verified facts, source URLs/titles, dates, qualifications, and visual provenance;
 - Shared Reading paragraphs, questions, answers, and evidence;
 - for each group: final passage pages, vocabulary/morphology, model, stops, questions, answers, evidence, prompts, misconceptions, assessment focus, next step, and visual plan;
 - final slide ranges and copy ranges.
 
-Generate teacher and student content from this record. Any passage revision invalidates dependent questions, answers, evidence locations, vocabulary references, and layout ranges until rechecked.
+Generate teacher and student content from this record. Any passage revision invalidates dependent questions, answers, evidence locations, vocabulary references, and layout ranges until rechecked. Assessment evidence may refine how the prescribed weekly focus is taught; it does not silently replace the focus.
 
 ## Layout manifest
 
@@ -81,6 +84,9 @@ Create a JSON manifest for deterministic auditing. Example shape:
   "schema_version": "1.0",
   "term": 1,
   "week": 2,
+  "reading_focus": "Main idea and supporting details",
+  "learning_intention": "Identify what a paragraph is mainly about and distinguish supporting information.",
+  "success_criteria": "I can state the main idea and select details that genuinely support it.",
   "writing_genre": "narrative",
   "content_area": "Health",
   "shared_reading": {
@@ -133,10 +139,11 @@ Run `scripts/audit_reading_pack.py` with the final decks and manifest. It checks
 - Shared Reading question/answer pair order;
 - likely passage reuse between Shared and Guided Reading.
 
-Treat warnings as required review, not automatic permission to release. The audit cannot judge instructional quality, factual truth, cultural authority, question validity, crop quality, or visual usefulness.
+Treat warnings as required review, not automatic permission to release. The audit cannot judge instructional quality, factual truth, cultural authority, question validity, crop quality, visual usefulness, or whether the recorded Reading Focus, Learning Intention, and Success Criteria match the overview.
 
 ## Final manual gates
 
+- Confirm the recorded Reading Focus, Learning Intention, and Success Criteria match the target term/week in `references/40-week-reading-overview.md`, unless an explicit teacher override is recorded.
 - Inspect all slides at full size, including every embedded duplicate.
 - Confirm every teacher prompt and answer against the displayed final student wording.
 - Confirm visuals match the final text and do not reveal intended inferences.
