@@ -10,6 +10,7 @@ Create the following teaching week's coordinated reading pack. Reading instructi
 Read the references required by the task:
 
 - Always read [the production standard](references/production-standard.md).
+- Always read [the 40-week reading overview](references/40-week-reading-overview.md) to resolve the prescribed Reading Focus, Learning Intention, and Success Criteria for the target term and week.
 - Read [the curriculum map](references/curriculum-map.md) when selecting or checking a weekly topic, genre, or curriculum alignment.
 - Read [the group profiles](references/group-profiles.md) before writing any Alpha-Epsilon text or teacher guidance.
 - Read [the PowerPoint pack contract](references/powerpoint-pack-contract.md) before creating, revising, or auditing files.
@@ -24,23 +25,31 @@ Use this source order:
 1. the user's current instruction;
 2. explicit lesson-status or assessment updates;
 3. the authoritative timetable and calendar;
-4. detailed weekly plans;
-5. the whole-year plan and [curriculum map](references/curriculum-map.md);
-6. standing defaults in this skill.
+4. [the 40-week reading overview](references/40-week-reading-overview.md) for the prescribed Reading Focus, Learning Intention, and Success Criteria;
+5. detailed weekly plans;
+6. the whole-year curriculum plan and [curriculum map](references/curriculum-map.md);
+7. standing defaults in this skill.
 
-If no detailed weekly plan exists for Weeks 1-6, select and sequence a suitable subtopic from the term curriculum. Record the selection and rationale in the teacher-facing source record. After Week 6, assessment evidence determines the reading focus; use curriculum-area balance only as a tie-breaker when multiple texts serve the same need.
+The 40-week overview is the default instructional sequence. Do not silently replace its prescribed weekly reading focus because a different comprehension strategy, curriculum topic, or assessment priority appears convenient. Teacher assessment may refine emphasis, modelling, scaffolding, evidence distance, question design, or group-specific next steps. Change the overview sequence only when the teacher explicitly directs that change.
+
+For Weeks 1-6, select a suitable curriculum subtopic and Writing connection that serve the prescribed reading focus. After Week 6, use assessment evidence to sharpen the prescribed focus and choose the most useful text form or context; use curriculum-area balance only as a tie-breaker when multiple contexts serve the same reading need.
 
 ## Build one coordinated weekly sequence
 
 Establish one weekly blueprint before drafting:
 
+- prescribed Reading Focus, Learning Intention, and Success Criteria from the 40-week overview;
+- previously taught comprehension processes that should spiral into the week's reading;
 - curriculum source area and precise topic;
 - essential facts, concepts, vocabulary, and source evidence;
 - current Writing genre and useful features during Weeks 1-6;
 - whole-class comprehension model for Shared Reading;
 - common conceptual spine for Guided Reading;
 - group-specific reading targets and access controls;
+- intended evidence distance and response depth;
 - visual purposes and cultural or safety constraints.
+
+Previously taught comprehension processes remain available throughout the year. The nominated weekly Reading Focus controls explicit teaching emphasis; it does not prohibit mixed literal, inferential, vocabulary, synthesis, or evaluative questions where appropriate. Increase evidence distance and independence across the year in line with the 40-week overview.
 
 Shared and Guided Reading must use distinct passages. They may share the topic, genre, knowledge, and selected vocabulary. Shared Reading explicitly models a useful meaning-making move; Guided Reading provides five genuine rewrites through which students apply or extend the learning at the teacher-assigned level.
 
