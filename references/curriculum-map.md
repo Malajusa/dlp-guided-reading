@@ -1,15 +1,17 @@
 # Year 4/5 Curriculum and Annual Reading Map
 
-Use this reference to select and check content. It is a concise working map of the curriculum documents supplied for English, HASS, Health and Physical Education, and Design and Technologies. Recheck the authoritative curriculum documents when exact wording or current codes matter.
+Use this reference to select and check curriculum content. The prescribed weekly reading focus, Learning Intention, and Success Criteria come from [the 40-week reading overview](40-week-reading-overview.md). This file supplies curriculum contexts and genre connections that serve that instructional sequence rather than replace it. Recheck the authoritative curriculum documents when exact wording or current codes matter.
 
 ## Reading-first hierarchy
 
-1. Teacher assessment and the intended reading move.
-2. English reading and viewing demands.
-3. Writing genre during Weeks 1-6.
-4. HASS, Health, or Design and Technologies content.
+1. Explicit teacher direction.
+2. The prescribed Reading Focus, Learning Intention, and Success Criteria in [the 40-week reading overview](40-week-reading-overview.md).
+3. Teacher assessment evidence used to refine emphasis, modelling, scaffolding, evidence distance, and question design within that focus.
+4. English reading and viewing demands.
+5. Writing genre during Weeks 1-6.
+6. HASS, Health, or Design and Technologies content.
 
-Do not make a passage harder merely by adding facts or technical words. Do not weaken narrative coherence to display curriculum coverage.
+Do not replace the prescribed weekly reading focus simply because another curriculum context or comprehension strategy is convenient. Do not make a passage harder merely by adding facts or technical words. Do not weaken narrative coherence to display curriculum coverage.
 
 ## Writing genre by term
 
@@ -22,7 +24,7 @@ The genre connection applies in Weeks 1-6 only.
 | 3 | Information report |
 | 4 | Narrative |
 
-After Week 6, select genre and text form according to assessment evidence and instructional need.
+After Week 6, select genre and text form according to assessment evidence and instructional need, but ensure the selected form provides a strong opportunity to teach and assess the prescribed weekly reading focus.
 
 ## Curriculum-source ratio
 
@@ -35,7 +37,7 @@ Across the 24 genre-aligned weeks, use 12 HASS, 6 Health, and 6 Design and Techn
 | 3 | HASS | Health | HASS | Technologies | HASS | Health |
 | 4 | HASS | Technologies | HASS | Health | HASS | Technologies |
 
-This produces a 2:1:1 annual ratio. After Week 6, preserve reading point-of-need; use the ratio only to choose between equally suitable contexts.
+This produces a 2:1:1 annual ratio. After Week 6, preserve the prescribed reading focus and point-of-need evidence; use the ratio only to choose between equally suitable contexts.
 
 ## English reading demands
 
