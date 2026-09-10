@@ -20,6 +20,8 @@ Text difficulty and question difficulty are related but separate controls. A rel
 
 ## Question taxonomy
 
+The taxonomy combines question demands observed in the supplied 2016 assessment with reading processes already required by this program's 40-week overview. Categories that are not strongly represented in this single NAPLAN paper remain program requirements; do not attribute them to the 2016 paper itself.
+
 Use the weekly Reading Focus to decide the dominant question type, while spiralling previously taught processes where useful.
 
 | Type | Student thinking | Typical evidence demand |
