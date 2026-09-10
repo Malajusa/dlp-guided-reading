@@ -11,6 +11,7 @@ Read the references required by the task:
 
 - Always read [the production standard](references/production-standard.md).
 - Always read [the 40-week reading overview](references/40-week-reading-overview.md) to resolve the prescribed Reading Focus, Learning Intention, and Success Criteria for the target term and week.
+- Always read [the NAPLAN-informed question design standard](references/naplan-reading-question-design.md) before writing or revising comprehension questions.
 - Read [the curriculum map](references/curriculum-map.md) when selecting or checking a weekly topic, genre, or curriculum alignment.
 - Read [the group profiles](references/group-profiles.md) before writing any Alpha-Epsilon text or teacher guidance.
 - Read [the PowerPoint pack contract](references/powerpoint-pack-contract.md) before creating, revising, or auditing files.
@@ -47,13 +48,20 @@ Establish one weekly blueprint before drafting:
 - common conceptual spine for Guided Reading;
 - group-specific reading targets and access controls;
 - intended evidence distance and response depth;
+- a structured question plan identifying target reasoning, evidence location/distance, expected answer, and acceptable evidence for each substantive question;
 - visual purposes and cultural or safety constraints.
 
 Previously taught comprehension processes remain available throughout the year. The nominated weekly Reading Focus controls explicit teaching emphasis; it does not prohibit mixed literal, inferential, vocabulary, synthesis, or evaluative questions where appropriate. Increase evidence distance and independence across the year in line with the 40-week overview.
 
 Shared and Guided Reading must use distinct passages. They may share the topic, genre, knowledge, and selected vocabulary. Shared Reading explicitly models a useful meaning-making move; Guided Reading provides five genuine rewrites through which students apply or extend the learning at the teacher-assigned level.
 
-Generate from one structured source record so student passages, teacher prompts, answers, evidence locations, visuals, citations, and slide ranges remain in parity. Do not draft the teacher sheet from memory after laying out student pages.
+## Design questions deliberately
+
+Apply [the NAPLAN-informed question design standard](references/naplan-reading-question-design.md) to every substantive comprehension question. Design the intended reasoning and evidence demand before polishing the wording. Treat text complexity and question complexity as separate controls.
+
+Use multiple choice only when discriminating between plausible interpretations has instructional value; do not reproduce NAPLAN's test-heavy response balance. For each multiple-choice item, record why every distractor is plausible but wrong. For constructed responses, distinguish the expected answer, acceptable evidence, and reasoning link where needed.
+
+Generate from one structured source record so student passages, teacher prompts, questions, answers, evidence locations, question metadata, visuals, citations, and slide ranges remain in parity. Do not draft the teacher sheet from memory after laying out student pages. Any passage revision invalidates dependent question records until they are rechecked against the final text.
 
 ## Preserve teacher-assigned groups
 
@@ -86,7 +94,7 @@ Maintain the layout manifest described in [the PowerPoint pack contract](referen
 python scripts/audit_reading_pack.py --manifest <manifest.json> --guided-deck <guided.pptx> --shared-deck <shared.pptx> --out <audit.json>
 ```
 
-Also render and inspect every slide at full size. Fix all errors before release. Structural success does not override weak differentiation, unsupported claims, cultural or Health-safety concerns, mismatched answers, unreadable pages, or unhelpful visuals.
+Also render and inspect every slide at full size. Fix all errors before release. Structural success does not override weak differentiation, unsupported claims, cultural or Health-safety concerns, mismatched answers, weak or ambiguous distractors, unsupported inferences, unreadable pages, or unhelpful visuals.
 
 Release only the requested final PowerPoints and a concise teacher-facing summary. Retain source and audit records in the working folder unless the user asks for them.
 
@@ -97,3 +105,4 @@ Release only the requested final PowerPoints and a concise teacher-facing summar
 - Morning Work, Literacy Warm-up, Shared Reading, Guided Reading, and independent reading use genuinely different passages.
 - The weekly Monday workflow is a production contract, not permission to create or modify a scheduler. Configure automation only when explicitly requested.
 - The supplied Technologies curriculum covers Design and Technologies. Do not silently claim Digital Technologies alignment.
+- NAPLAN materials inform question construction only. Do not copy their passages or questions, reproduce their response-format balance, or turn weekly Guided Reading into standardised-test rehearsal.
