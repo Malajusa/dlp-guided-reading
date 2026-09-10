@@ -1,6 +1,6 @@
 # Shared and Guided Reading Production Standard
 
-Status: governing development standard, version 2.0. This skill remains a development component until it passes release review and is deliberately integrated into the Daily Lesson Pack umbrella.
+Status: governing development standard, version 2.1. This skill remains a development component until it passes release review and is deliberately integrated into the Daily Lesson Pack umbrella.
 
 ## 1. Instructional priority
 
@@ -42,7 +42,8 @@ Before writing group texts, define:
 - essential vocabulary and word families;
 - intended comprehension opportunity;
 - visual information students may use;
-- evidence students must locate, connect, infer, or evaluate.
+- evidence students must locate, connect, infer, synthesise, or evaluate;
+- intended question types, target reasoning, evidence locations, and evidence distances.
 
 Every group receives a genuine rewrite. Preserve a comparable conceptual destination while deliberately controlling decoding, morphology, vocabulary, syntax, cohesion, paragraph density, background knowledge, inference distance, ambiguity, text structure, navigation, fluency demand, and response depth. Word count alone is not differentiation.
 
@@ -61,6 +62,18 @@ Each teacher sheet supports:
 
 Adapt pacing responsively. Do not force every question type into every session.
 
+### Question design
+
+Use [the NAPLAN-informed question design standard](naplan-reading-question-design.md) before writing or revising comprehension questions. It is a question-construction reference, not a requirement to imitate NAPLAN.
+
+Design the intended reasoning and evidence demand before polishing question wording. For each substantive question, the working source record identifies the question type, target reasoning, evidence location, evidence distance, expected answer, acceptable evidence, response mode, and reasoning link where needed.
+
+For multiple-choice questions, record the correct option and why each distractor is plausible but wrong. Use multiple choice only when discriminating among plausible interpretations adds instructional value. Do not reproduce the response-format balance of a standardised assessment.
+
+For constructed responses, distinguish the answer, supporting evidence, and reasoning connection where appropriate. Accept alternative interpretations when the final text genuinely supports them.
+
+Text complexity and question complexity are separate controls. Do not create apparent rigour through obscure question wording, trivia, arbitrary vocabulary, or trick distractors.
+
 ## 5. Teacher sheet
 
 Provide exactly one A4 landscape teacher sheet for each group. It must be teachable without reconstructing the lesson and contain, in a concise printable layout:
@@ -78,7 +91,7 @@ Provide exactly one A4 landscape teacher sheet for each group. It must be teacha
 - assessment evidence and next-step field;
 - compact source record where claims or visuals require it.
 
-Questions and answers must match the final student text exactly.
+Questions and answers must match the final student text exactly. Teacher-facing question guidance should make the intended reasoning visible when it is not obvious from the question itself.
 
 ## 6. Student reading
 
@@ -112,6 +125,11 @@ Do not release when any of these remain:
 - incorrect group, day, assessed profile, or cover information;
 - Shared Reading passage reused in Guided Reading;
 - teacher/student question, answer, evidence, vocabulary, or pagination mismatch;
+- a substantive question without a defensible answer in the final supplied text or visual;
+- a question whose recorded evidence location or evidence distance does not match the final text;
+- multiple-choice distractors that are ambiguous, implausible, giveaway options, or not demonstrably wrong for text-based reasons;
+- constructed-response expectations that demand evidence not available in the supplied text;
+- question difficulty created mainly through trick wording or irrelevant language complexity;
 - unsupported factual or cultural claims;
 - automatically selected sensitive Health content;
 - missing genre or curriculum connection during Weeks 1-6;
@@ -122,4 +140,4 @@ Do not release when any of these remain:
 - an incomplete teacher sheet;
 - a deck that has not passed deterministic checks and full rendered inspection.
 
-Historical resources are evidence only. Known historical failures include Beta/Gamma duplication, a Delta cover inside Epsilon, mixed page geometry, and flattened text; none may be normalised as a template.
+Historical resources and the supplied NAPLAN materials are evidence only. NAPLAN informs question construction; its passages, questions, response-format balance, or test conditions are not templates for weekly Guided Reading. Known historical pack failures include Beta/Gamma duplication, a Delta cover inside Epsilon, mixed page geometry, and flattened text; none may be normalised as a template.

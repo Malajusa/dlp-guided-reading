@@ -57,6 +57,8 @@ After any optional title or orientation slide recorded in the manifest, alternat
 
 Keep paragraphs readable when projected. The complete answer is visually dominant. An answer slide may include one short evidence explanation but cannot add a new paragraph or question.
 
+Design each question using [the NAPLAN-informed question design standard](naplan-reading-question-design.md). The standard informs question quality and evidence reasoning only; it does not require NAPLAN-style formatting or multiple-choice dominance.
+
 ## Working source record
 
 Before layout, maintain a structured record containing:
@@ -69,11 +71,44 @@ Before layout, maintain a structured record containing:
 - previously taught comprehension processes deliberately spiralled into the week's reading;
 - intended evidence distance and response depth;
 - verified facts, source URLs/titles, dates, qualifications, and visual provenance;
-- Shared Reading paragraphs, questions, answers, and evidence;
-- for each group: final passage pages, vocabulary/morphology, model, stops, questions, answers, evidence, prompts, misconceptions, assessment focus, next step, and visual plan;
+- Shared Reading paragraphs and one structured question record per question/answer pair;
+- for each group: final passage pages, vocabulary/morphology, model, stops, structured question records, prompts, misconceptions, assessment focus, next step, and visual plan;
 - final slide ranges and copy ranges.
 
-Generate teacher and student content from this record. Any passage revision invalidates dependent questions, answers, evidence locations, vocabulary references, and layout ranges until rechecked. Assessment evidence may refine how the prescribed weekly focus is taught; it does not silently replace the focus.
+Each substantive question record contains at minimum:
+
+```json
+{
+  "id": "GAMMA-Q2",
+  "question_type": "inference",
+  "target_reasoning": "Combine the character's action with the later reaction to infer motive",
+  "evidence_location": "paragraphs 2 and 4",
+  "evidence_distance": "distributed",
+  "response_mode": "constructed",
+  "expected_answer": "...",
+  "acceptable_evidence": ["..."],
+  "reasoning_link": "..."
+}
+```
+
+Use the taxonomy and evidence-distance values in `references/naplan-reading-question-design.md`. `reasoning_link` may be brief or omitted only when the relationship between evidence and answer is self-evident.
+
+For a multiple-choice question, also record:
+
+```json
+{
+  "correct_option": "B",
+  "distractors": [
+    {"option": "A", "error_model": "surface match", "why_wrong": "..."},
+    {"option": "C", "error_model": "partial evidence", "why_wrong": "..."},
+    {"option": "D", "error_model": "unsupported inference", "why_wrong": "..."}
+  ]
+}
+```
+
+Every distractor must be plausible but demonstrably wrong for a text-based reason. Do not use joke answers, giveaway wording, or ambiguous alternatives.
+
+Generate teacher and student content from this record. Any passage revision invalidates dependent questions, answers, evidence locations, evidence distances, distractor rationales, vocabulary references, and layout ranges until rechecked. Assessment evidence may refine how the prescribed weekly focus is taught; it does not silently replace the focus.
 
 ## Layout manifest
 
@@ -124,6 +159,8 @@ Add all five groups. Slide ranges are inclusive and one-based. `epsilon_visual_e
 
 `page` is the page position within each Epsilon student copy, not the absolute slide number.
 
+The layout manifest remains deliberately structural. Keep the richer semantic question records in the working source record rather than pretending the deterministic layout audit can judge question quality.
+
 ## Deterministic audit
 
 Run `scripts/audit_reading_pack.py` with the final decks and manifest. It checks:
@@ -139,11 +176,15 @@ Run `scripts/audit_reading_pack.py` with the final decks and manifest. It checks
 - Shared Reading question/answer pair order;
 - likely passage reuse between Shared and Guided Reading.
 
-Treat warnings as required review, not automatic permission to release. The audit cannot judge instructional quality, factual truth, cultural authority, question validity, crop quality, visual usefulness, or whether the recorded Reading Focus, Learning Intention, and Success Criteria match the overview.
+Treat warnings as required review, not automatic permission to release. The audit cannot judge instructional quality, factual truth, cultural authority, question validity, distractor quality, crop quality, visual usefulness, or whether the recorded Reading Focus, Learning Intention, and Success Criteria match the overview.
 
 ## Final manual gates
 
 - Confirm the recorded Reading Focus, Learning Intention, and Success Criteria match the target term/week in `references/40-week-reading-overview.md`, unless an explicit teacher override is recorded.
+- Inspect every final question against its structured question record and the final student text or visual.
+- Confirm each answer is defensible, the evidence location/distance is accurate, and any required reasoning link is valid.
+- For every multiple-choice item, confirm all distractors are plausible, distinct, and demonstrably wrong for text-based reasons.
+- Confirm question wording does not introduce accidental difficulty unrelated to the intended reading process.
 - Inspect all slides at full size, including every embedded duplicate.
 - Confirm every teacher prompt and answer against the displayed final student wording.
 - Confirm visuals match the final text and do not reveal intended inferences.
