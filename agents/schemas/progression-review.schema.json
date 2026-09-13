@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "progression-review.schema.json",
+  "title": "Progression and Parity Review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["reviewer_role", "verdict", "passage_sha256", "pitch_progression_summary", "blocking_issues", "required_revisions", "non_blocking_notes"],
+  "properties": {
+    "reviewer_role": {"const": "progression-parity-reviewer"},
+    "verdict": {"enum": ["PASS", "REVISE_LEVELS", "REJECT_SET"]},
+    "passage_sha256": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["Alpha", "Beta", "Gamma", "Delta", "Epsilon"],
+      "properties": {
+        "Alpha": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "Beta": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "Gamma": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "Delta": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "Epsilon": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "pitch_progression_summary": {"type": "string", "minLength": 1},
+    "blocking_issues": {"type": "array", "items": {"type": "string"}},
+    "required_revisions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Alpha": {"type": "array", "items": {"type": "string"}},
+        "Beta": {"type": "array", "items": {"type": "string"}},
+        "Gamma": {"type": "array", "items": {"type": "string"}},
+        "Delta": {"type": "array", "items": {"type": "string"}},
+        "Epsilon": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "non_blocking_notes": {"type": "array", "items": {"type": "string"}}
+  }
+}
