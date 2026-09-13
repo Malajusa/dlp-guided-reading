@@ -72,8 +72,27 @@ Before layout, maintain a structured record containing:
 - intended evidence distance and response depth;
 - verified facts, source URLs/titles, dates, qualifications, and visual provenance;
 - Shared Reading paragraphs and one structured question record per question/answer pair;
-- for each group: final passage pages, vocabulary/morphology, model, stops, structured question records, prompts, misconceptions, assessment focus, next step, and visual plan;
+- for each group: final passage pages, vocabulary/morphology, model, stops, structured question records, prompts, misconceptions, assessment focus, next step, visual plan, current passage hash, revision cycle, and current level pitch-review record;
+- one current set-level progression/parity review containing all five passage hashes;
+- any explicit teacher override of a pitch gate, including which gate was overridden and why;
 - final slide ranges and copy ranges.
+
+Each group retains pitch evidence in this logical shape:
+
+```json
+{
+  "passage_sha256": "...",
+  "revision_cycle": 1,
+  "pitch_review": {
+    "reviewer_role": "alpha-pitch-reviewer",
+    "group": "Alpha",
+    "verdict": "PASS",
+    "passage_sha256": "..."
+  }
+}
+```
+
+A wording change invalidates that group's previous pitch approval and the set-level progression/parity approval. If the wording change affects evidence location, answerability, or wording relied upon by questions, dependent question records are also invalid until rechecked. The normal review loop is limited to three cycles per passage before a fresh redraft from the weekly blueprint.
 
 Each substantive question record contains at minimum:
 
@@ -108,7 +127,17 @@ For a multiple-choice question, also record:
 
 Every distractor must be plausible but demonstrably wrong for a text-based reason. Do not use joke answers, giveaway wording, or ambiguous alternatives.
 
-Generate teacher and student content from this record. Any passage revision invalidates dependent questions, answers, evidence locations, evidence distances, distractor rationales, vocabulary references, and layout ranges until rechecked. Assessment evidence may refine how the prescribed weekly focus is taught; it does not silently replace the focus.
+Generate teacher and student content from this record. Any passage revision invalidates dependent questions, answers, evidence locations, evidence distances, distractor rationales, vocabulary references, pitch approvals, progression/parity approval, and layout ranges until the relevant gates are rechecked. Assessment evidence may refine how the prescribed weekly focus is taught; it does not silently replace the focus.
+
+## Pre-layout pitch audit
+
+Before creating the final PowerPoint layouts, build the pitch-review package and run:
+
+```text
+python scripts/validate_pitch_review_package.py --package <pitch-review-package.json> --out <pitch-review-audit.json>
+```
+
+Require `pitch-review-audit.json` status `PASS`. Keep this semantic/current-state gate separate from the structural layout manifest and `audit_reading_pack.py`.
 
 ## Layout manifest
 
@@ -159,7 +188,7 @@ Add all five groups. Slide ranges are inclusive and one-based. `epsilon_visual_e
 
 `page` is the page position within each Epsilon student copy, not the absolute slide number.
 
-The layout manifest remains deliberately structural. Keep the richer semantic question records in the working source record rather than pretending the deterministic layout audit can judge question quality.
+The layout manifest remains deliberately structural. Keep the richer semantic question and pitch-review records in the working source record rather than pretending the deterministic layout audit can judge their quality.
 
 ## Deterministic audit
 
@@ -176,10 +205,12 @@ Run `scripts/audit_reading_pack.py` with the final decks and manifest. It checks
 - Shared Reading question/answer pair order;
 - likely passage reuse between Shared and Guided Reading.
 
-Treat warnings as required review, not automatic permission to release. The audit cannot judge instructional quality, factual truth, cultural authority, question validity, distractor quality, crop quality, visual usefulness, or whether the recorded Reading Focus, Learning Intention, and Success Criteria match the overview.
+Treat warnings as required review, not automatic permission to release. The audit cannot judge instructional quality, factual truth, cultural authority, question validity, distractor quality, crop quality, visual usefulness, semantic pitch quality, or whether the recorded Reading Focus, Learning Intention, and Success Criteria match the overview.
 
 ## Final manual gates
 
+- Confirm `pitch-review-audit.json` is `PASS` for the final passage text.
+- Confirm all five current level `PASS` records and the current progression/parity `PASS` are retained and hash-matched.
 - Confirm the recorded Reading Focus, Learning Intention, and Success Criteria match the target term/week in `references/40-week-reading-overview.md`, unless an explicit teacher override is recorded.
 - Inspect every final question against its structured question record and the final student text or visual.
 - Confirm each answer is defensible, the evidence location/distance is accurate, and any required reasoning link is valid.

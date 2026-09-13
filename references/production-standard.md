@@ -1,6 +1,6 @@
 # Shared and Guided Reading Production Standard
 
-Status: governing development standard, version 2.1. This skill remains a development component until it passes release review and is deliberately integrated into the Daily Lesson Pack umbrella.
+Status: governing development standard, version 2.2. This skill remains a development component until it passes release review and is deliberately integrated into the Daily Lesson Pack umbrella.
 
 ## 1. Instructional priority
 
@@ -62,6 +62,28 @@ Each teacher sheet supports:
 
 Adapt pacing responsively. Do not force every question type into every session.
 
+### Pitch review
+
+Before final question writing or layout, run the workflow in [the agent orchestration contract](agent-orchestration.md). The central passage writer drafts all five passages but never approves its own pitch. Each Alpha-Epsilon passage requires a current `PASS` from its assigned pitch reviewer, bound to the exact passage SHA-256. After all five individual passes, the Progression and Parity Agent must return a current `PASS` bound to the exact five-passage hash set.
+
+The working source record retains:
+
+- five current level `PASS` records;
+- each reviewed passage hash and current revision cycle;
+- one current progression/parity `PASS` containing all five hashes;
+- any explicit teacher override, including the gate overridden and the reason;
+- question-record validity after any passage revision.
+
+Any wording change invalidates that level's prior approval and the set-level parity approval. If a change affects evidence locations or answerability, dependent question records are also invalid. A passage may undergo at most three normal review cycles before a fresh redraft from the blueprint is required.
+
+Semantic pitch judgement belongs to the specialist reviewers. Hash/current-state integrity is checked mechanically with:
+
+```text
+python scripts/validate_pitch_review_package.py --package <pitch-review-package.json> --out <pitch-review-audit.json>
+```
+
+A weekly pack cannot proceed to layout unless that audit returns `PASS`.
+
 ### Question design
 
 Use [the NAPLAN-informed question design standard](naplan-reading-question-design.md) before writing or revising comprehension questions. It is a question-construction reference, not a requirement to imitate NAPLAN.
@@ -121,6 +143,12 @@ Default rotation is Monday Alpha, Tuesday Beta, Wednesday Gamma, Thursday Delta,
 
 Do not release when any of these remain:
 
+- missing, malformed, non-PASS, or stale level pitch approval;
+- a level `PASS` whose passage hash differs from the final text;
+- missing, non-PASS, or stale progression/parity approval;
+- a fourth unsuccessful patch cycle without a fresh redraft;
+- a reviewer attempt to change teacher-assigned placement;
+- pitch-review audit status other than `PASS`;
 - identical or cosmetically altered group passages;
 - incorrect group, day, assessed profile, or cover information;
 - Shared Reading passage reused in Guided Reading;
