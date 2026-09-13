@@ -1,0 +1,22 @@
+{
+  "title": "Pitch Agent Orchestration State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "groups", "progression_review_status"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "groups": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["Alpha", "Beta", "Gamma", "Delta", "Epsilon"],
+      "properties": {
+        "Alpha": {"type": "object"},
+        "Beta": {"type": "object"},
+        "Gamma": {"type": "object"},
+        "Delta": {"type": "object"},
+        "Epsilon": {"type": "object"}
+      }
+    },
+    "progression_review_status": {"enum": ["not_ready", "pending", "PASS", "REVISE_LEVELS", "REJECT_SET", "stale"]}
+  }
+}
