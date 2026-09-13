@@ -10,11 +10,11 @@
       "additionalProperties": false,
       "required": ["Alpha", "Beta", "Gamma", "Delta", "Epsilon"],
       "properties": {
-        "Alpha": {"type": "object"},
-        "Beta": {"type": "object"},
-        "Gamma": {"type": "object"},
-        "Delta": {"type": "object"},
-        "Epsilon": {"type": "object"}
+        "Alpha": {"type":"object","additionalProperties":false,"required":["text","current_sha256","revision_cycle","level_review_status","question_records_valid"],"properties":{"text":{"type":"string","minLength":1},"current_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"revision_cycle":{"type":"integer","minimum":0,"maximum":3},"level_review_status":{"enum":["pending","PASS","REVISE","REJECT","stale"]},"question_records_valid":{"type":"boolean"}}},
+        "Beta": {"type":"object","additionalProperties":false,"required":["text","current_sha256","revision_cycle","level_review_status","question_records_valid"],"properties":{"text":{"type":"string","minLength":1},"current_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"revision_cycle":{"type":"integer","minimum":0,"maximum":3},"level_review_status":{"enum":["pending","PASS","REVISE","REJECT","stale"]},"question_records_valid":{"type":"boolean"}}},
+        "Gamma": {"type":"object","additionalProperties":false,"required":["text","current_sha256","revision_cycle","level_review_status","question_records_valid"],"properties":{"text":{"type":"string","minLength":1},"current_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"revision_cycle":{"type":"integer","minimum":0,"maximum":3},"level_review_status":{"enum":["pending","PASS","REVISE","REJECT","stale"]},"question_records_valid":{"type":"boolean"}}},
+        "Delta": {"type":"object","additionalProperties":false,"required":["text","current_sha256","revision_cycle","level_review_status","question_records_valid"],"properties":{"text":{"type":"string","minLength":1},"current_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"revision_cycle":{"type":"integer","minimum":0,"maximum":3},"level_review_status":{"enum":["pending","PASS","REVISE","REJECT","stale"]},"question_records_valid":{"type":"boolean"}}},
+        "Epsilon": {"type":"object","additionalProperties":false,"required":["text","current_sha256","revision_cycle","level_review_status","question_records_valid"],"properties":{"text":{"type":"string","minLength":1},"current_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"revision_cycle":{"type":"integer","minimum":0,"maximum":3},"level_review_status":{"enum":["pending","PASS","REVISE","REJECT","stale"]},"question_records_valid":{"type":"boolean"}}}
       }
     },
     "progression_review_status": {"enum": ["not_ready", "pending", "PASS", "REVISE_LEVELS", "REJECT_SET", "stale"]}
