@@ -1,0 +1,16 @@
+[
+  {"case_id":"alpha-childish","assigned_role":"alpha-pitch-reviewer","group":"Alpha","expected_verdict":["REVISE","REJECT"],"must_flag":"age_appropriateness"},
+  {"case_id":"alpha-dense-syntax","assigned_role":"alpha-pitch-reviewer","group":"Alpha","expected_verdict":["REVISE","REJECT"],"must_flag":"syntax"},
+  {"case_id":"beta-vocab-only","assigned_role":"beta-pitch-reviewer","group":"Beta","expected_verdict":["REVISE","REJECT"],"must_flag":"vocabulary_morphology"},
+  {"case_id":"gamma-underpitched","assigned_role":"gamma-pitch-reviewer","group":"Gamma","expected_verdict":["REVISE","REJECT"],"must_flag":"response_demand"},
+  {"case_id":"delta-length-only","assigned_role":"delta-pitch-reviewer","group":"Delta","expected_verdict":["REVISE","REJECT"],"must_flag":"inference_ambiguity"},
+  {"case_id":"epsilon-long-year5","assigned_role":"epsilon-pitch-reviewer","group":"Epsilon","expected_verdict":["REVISE","REJECT"],"must_flag":"syntax"},
+  {"case_id":"epsilon-topic-drift","assigned_role":"epsilon-pitch-reviewer","group":"Epsilon","expected_verdict":["REVISE","REJECT"],"must_flag":"age_appropriateness"},
+  {"case_id":"alpha-well-pitched","assigned_role":"alpha-pitch-reviewer","group":"Alpha","expected_verdict":["PASS"],"must_flag":null},
+  {"case_id":"beta-well-pitched","assigned_role":"beta-pitch-reviewer","group":"Beta","expected_verdict":["PASS"],"must_flag":null},
+  {"case_id":"gamma-well-pitched","assigned_role":"gamma-pitch-reviewer","group":"Gamma","expected_verdict":["PASS"],"must_flag":null},
+  {"case_id":"delta-well-pitched","assigned_role":"delta-pitch-reviewer","group":"Delta","expected_verdict":["PASS"],"must_flag":null},
+  {"case_id":"epsilon-well-pitched","assigned_role":"epsilon-pitch-reviewer","group":"Epsilon","expected_verdict":["PASS"],"must_flag":null},
+  {"case_id":"parity-beta-gamma-duplicate","assigned_role":"progression-parity-reviewer","group":"SET","expected_verdict":["REVISE_LEVELS","REJECT_SET"],"must_flag":"adjacent-group duplication"},
+  {"case_id":"parity-alpha-content-loss","assigned_role":"progression-parity-reviewer","group":"SET","expected_verdict":["REVISE_LEVELS","REJECT_SET"],"must_flag":"Alpha/Beta content loss"}
+]
