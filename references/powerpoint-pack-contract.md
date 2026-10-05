@@ -73,7 +73,7 @@ Before layout, maintain a structured record containing:
 - verified facts, source URLs/titles, dates, qualifications, and visual provenance;
 - Shared Reading paragraphs and one structured question record per question/answer pair;
 - for each group: final passage pages, vocabulary/morphology, model, stops, structured question records, prompts, misconceptions, assessment focus, next step, visual plan, current passage hash, revision cycle, and current level pitch-review record;
-- one current set-level progression/parity review containing all five passage hashes;
+- one current set-level `progression_review` record containing all five passage hashes under `passage_sha256`, with the role, verdict, summary, blocking issues, required revisions and notes defined in `agents/schemas/progression-review.schema.json`;
 - any explicit teacher override of a pitch gate, including which gate was overridden and why;
 - final slide ranges and copy ranges.
 
@@ -92,7 +92,7 @@ Each group retains pitch evidence in this logical shape:
 }
 ```
 
-A wording change invalidates that group's previous pitch approval and the set-level progression/parity approval. If the wording change affects evidence location, answerability, or wording relied upon by questions, dependent question records are also invalid until rechecked. The normal review loop is limited to three cycles per passage before a fresh redraft from the weekly blueprint.
+A wording change invalidates that group's previous pitch approval and the set-level progression/parity approval. If the wording change affects evidence location, answerability, or wording relied upon by questions, dependent question records are also invalid until rechecked. The normal review loop is limited to three revision cycles per passage before a fresh redraft from the weekly blueprint.
 
 Each substantive question record contains at minimum:
 

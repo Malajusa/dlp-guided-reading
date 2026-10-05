@@ -9,6 +9,8 @@ from typing import Any
 EXPECTED_GROUPS = ("Alpha", "Beta", "Gamma", "Delta", "Epsilon")
 REQUIRED_DIMENSIONS = ("decoding", "vocabulary_morphology", "syntax", "cohesion", "background_knowledge", "evidence_distance", "inference_ambiguity", "response_demand", "age_appropriateness", "visual_support", "conceptual_parity")
 FORBIDDEN_REVIEW_FIELDS = {"suggested_profile", "replacement_profile", "new_group"}
+LEVEL_REVIEW_FIELDS = {"reviewer_role", "group", "passage_sha256", "verdict", "pitch_summary", "dimension_findings", "blocking_issues", "required_revisions", "non_blocking_notes"}
+PROGRESSION_REVIEW_FIELDS = {"reviewer_role", "verdict", "passage_sha256", "pitch_progression_summary", "blocking_issues", "required_revisions", "non_blocking_notes"}
 HASH_RE = re.compile(r"^[0-9a-f]{64}$")
 
 
@@ -34,6 +36,8 @@ def _find_forbidden(value: Any, path: str = "") -> list[str]:
 
 def _require_list(value: Any, label: str, errors: list[str]) -> list[Any]:
     if isinstance(value, list):
+        if any(not isinstance(item, str) for item in value):
+            errors.append(f"{label} must contain only strings")
         return value
     errors.append(f"{label} must be a list")
     return []
@@ -82,6 +86,9 @@ def validate_review_package(package: dict[str, Any]) -> dict[str, Any]:
         review = reviews.get(group)
         if not isinstance(review, dict):
             errors.append(f"{group}: level review must be an object"); continue
+        extra_fields = set(review) - LEVEL_REVIEW_FIELDS
+        if extra_fields:
+            errors.append(f"{group}: unexpected review fields: " + ", ".join(sorted(extra_fields)))
         role = f"{group.lower()}-pitch-reviewer"
         if review.get("reviewer_role") != role: errors.append(f"{group}: reviewer_role must be {role}")
         if review.get("group") != group: errors.append(f"{group}: review group must be {group}")
@@ -91,7 +98,7 @@ def validate_review_package(package: dict[str, Any]) -> dict[str, Any]:
         elif group in hashes and review_hash != hashes[group]:
             errors.append(f"{group}: review hash is stale and does not match current passage")
         verdict = review.get("verdict")
-        if verdict not in {"PASS", "REVISE", "REJECT"}: errors.append(f"{group}: verdict must be PASS, REVISE, or REJECT")
+        if not isinstance(verdict, str) or verdict not in {"PASS", "REVISE", "REJECT"}: errors.append(f"{group}: verdict must be PASS, REVISE, or REJECT")
         elif verdict != "PASS": errors.append(f"{group}: release package requires PASS; found {verdict}")
         if not isinstance(review.get("pitch_summary"), str) or not review.get("pitch_summary", "").strip():
             errors.append(f"{group}: pitch_summary must be non-empty")
@@ -115,9 +122,12 @@ def validate_review_package(package: dict[str, Any]) -> dict[str, Any]:
     progression = package.get("progression_review")
     if not isinstance(progression, dict): errors.append("progression_review must be an object")
     else:
+        extra_fields = set(progression) - PROGRESSION_REVIEW_FIELDS
+        if extra_fields:
+            errors.append("progression_review unexpected fields: " + ", ".join(sorted(extra_fields)))
         if progression.get("reviewer_role") != "progression-parity-reviewer": errors.append("progression_review reviewer_role must be progression-parity-reviewer")
         verdict = progression.get("verdict")
-        if verdict not in {"PASS", "REVISE_LEVELS", "REJECT_SET"}: errors.append("progression_review verdict must be PASS, REVISE_LEVELS, or REJECT_SET")
+        if not isinstance(verdict, str) or verdict not in {"PASS", "REVISE_LEVELS", "REJECT_SET"}: errors.append("progression_review verdict must be PASS, REVISE_LEVELS, or REJECT_SET")
         elif verdict != "PASS": errors.append(f"progression_review release package requires PASS; found {verdict}")
         if not isinstance(progression.get("pitch_progression_summary"), str) or not progression.get("pitch_progression_summary", "").strip(): errors.append("progression_review pitch_progression_summary must be non-empty")
         p_hashes = progression.get("passage_sha256")
@@ -148,7 +158,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv or sys.argv[1:])
     try:
         report = validate_review_package(json.loads(args.package.read_text(encoding="utf-8")))
-    except (OSError, json.JSONDecodeError, TypeError) as exc:
+    except (OSError, ValueError, TypeError, RecursionError) as exc:
         report = {"status": "FAIL", "errors": [str(exc)], "checks": []}
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")

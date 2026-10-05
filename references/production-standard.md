@@ -74,7 +74,7 @@ The working source record retains:
 - any explicit teacher override, including the gate overridden and the reason;
 - question-record validity after any passage revision.
 
-Any wording change invalidates that level's prior approval and the set-level parity approval. If a change affects evidence locations or answerability, dependent question records are also invalid. A passage may undergo at most three normal review cycles before a fresh redraft from the blueprint is required.
+Any wording change invalidates that level's prior approval and the set-level parity approval. If a change affects evidence locations or answerability, dependent question records are also invalid. A passage may undergo at most three revision cycles before a fresh redraft from the blueprint is required.
 
 Semantic pitch judgement belongs to the specialist reviewers. Hash/current-state integrity is checked mechanically with:
 
