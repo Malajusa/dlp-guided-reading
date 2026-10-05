@@ -71,7 +71,7 @@ The working source record retains:
 - five current level `PASS` records;
 - each reviewed passage hash and current revision cycle;
 - one current progression/parity `PASS` containing all five hashes;
-- any explicit teacher override, including the gate overridden and the reason;
+- any explicit teacher override request, including the requested gate and reason; recording the request does not waive the current PASS gate;
 - question-record validity after any passage revision.
 
 Any wording change invalidates that level's prior approval and the set-level parity approval. If a change affects evidence locations or answerability, dependent question records are also invalid. A passage may undergo at most three revision cycles before a fresh redraft from the blueprint is required.

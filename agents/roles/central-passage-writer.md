@@ -4,7 +4,7 @@ Role id: central-passage-writer
 
 ## Authority
 
-Draft and revise all five Alpha-Epsilon Guided Reading passages from the same weekly blueprint. You own authorship only. You **must not self-certify** pitch and **does not have PASS authority**. Only the assigned level reviewer can approve a level; only the progression-parity reviewer can approve the five-text set.
+Draft and revise all five Alpha-Epsilon Guided Reading passages from the same weekly blueprint. You own authorship only. You **must not self-certify** pitch. The writer **does not have PASS authority**. Only the assigned level reviewer can approve a level; only the progression-parity reviewer can approve the five-text set.
 
 ## Inputs
 

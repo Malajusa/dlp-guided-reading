@@ -74,7 +74,7 @@ Before layout, maintain a structured record containing:
 - Shared Reading paragraphs and one structured question record per question/answer pair;
 - for each group: final passage pages, vocabulary/morphology, model, stops, structured question records, prompts, misconceptions, assessment focus, next step, visual plan, current passage hash, revision cycle, and current level pitch-review record;
 - one current set-level `progression_review` record containing all five passage hashes under `passage_sha256`, with the role, verdict, summary, blocking issues, required revisions and notes defined in `agents/schemas/progression-review.schema.json`;
-- any explicit teacher override of a pitch gate, including which gate was overridden and why;
+- any explicit teacher override request for a pitch gate, including the requested gate and reason; the request does not bypass the current PASS requirement;
 - final slide ranges and copy ranges.
 
 Each group retains pitch evidence in this logical shape:

@@ -38,4 +38,4 @@ python scripts/validate_pitch_review_package.py --package <pitch-review-package.
 
 A package cannot pass with missing reviews, stale hashes, non-PASS verdicts, revision cycles above three, placement-change fields or a stale progression review.
 
-Teacher override is possible only through explicit teacher direction recorded in the working source record. Record the gate overridden and why; do not silently convert a failed review into a pass.
+Teacher override requests must be recorded in the working source record, including the requested gate and reason. The current validator has no teacher-override input: recording a request does not waive the five current level PASS records or the current progression/parity PASS. Preserve the actual verdicts and hold release until the normal gate passes. Do not convert a failed review into PASS or proceed to layout on an override request. An override execution path is not implemented by this component.

@@ -32,5 +32,12 @@
     "blocking_issues": {"type": "array", "items": {"type": "string"}},
     "required_revisions": {"type": "array", "items": {"type": "string"}},
     "non_blocking_notes": {"type": "array", "items": {"type": "string"}}
-  }
+  },
+  "oneOf": [
+    {"properties": {"reviewer_role": {"const": "alpha-pitch-reviewer"},"group": {"const": "Alpha"}}},
+    {"properties": {"reviewer_role": {"const": "beta-pitch-reviewer"},"group": {"const": "Beta"}}},
+    {"properties": {"reviewer_role": {"const": "gamma-pitch-reviewer"},"group": {"const": "Gamma"}}},
+    {"properties": {"reviewer_role": {"const": "delta-pitch-reviewer"},"group": {"const": "Delta"}}},
+    {"properties": {"reviewer_role": {"const": "epsilon-pitch-reviewer"},"group": {"const": "Epsilon"}}}
+  ]
 }
