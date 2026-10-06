@@ -38,4 +38,6 @@ python scripts/validate_pitch_review_package.py --package <pitch-review-package.
 
 A package cannot pass with missing reviews, stale hashes, non-PASS verdicts, revision cycles above three, placement-change fields or a stale progression review.
 
+The release inputs are `schema_version`, `passages`, `level_reviews` and `progression_review`. There is no package-level closed-key schema: other supplemental top-level metadata is ignored for compatibility and is neither validated nor accepted as release evidence. The reserved unsupported `teacher_override` key is rejected even when all ordinary gates already pass, regardless of its value. Keep override requests in the separate working source record, not in the release package. No supplemental field can change a review verdict or waive a gate.
+
 Teacher override requests must be recorded in the working source record, including the requested gate and reason. The current validator has no teacher-override input: recording a request does not waive the five current level PASS records or the current progression/parity PASS. Preserve the actual verdicts and hold release until the normal gate passes. Do not convert a failed review into PASS or proceed to layout on an override request. An override execution path is not implemented by this component.

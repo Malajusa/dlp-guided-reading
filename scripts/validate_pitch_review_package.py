@@ -50,6 +50,8 @@ def validate_review_package(package: dict[str, Any]) -> dict[str, Any]:
         return {"status": "FAIL", "errors": ["Package must be a JSON object"], "checks": []}
     if package.get("schema_version") != "1.0":
         errors.append("schema_version must be 1.0")
+    if "teacher_override" in package:
+        errors.append("teacher_override is not a supported release input; record requests outside the review package")
 
     expected = set(EXPECTED_GROUPS)
     passages = package.get("passages") if isinstance(package.get("passages"), dict) else {}

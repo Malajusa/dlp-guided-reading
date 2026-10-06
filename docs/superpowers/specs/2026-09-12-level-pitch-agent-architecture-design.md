@@ -1,7 +1,7 @@
 # Level-Specific Pitch Agent Architecture
 
 Date: 2026-09-12
-Status: Approved in principle; implementation not yet started
+Status: Design implemented as a draft, unmerged candidate. See the [current validation report](../../validation/level-pitch-agent-validation.md) for verified scope and outstanding release checks.
 
 ## Purpose
 
@@ -290,9 +290,9 @@ Release is blocked when:
 - reviewer output is malformed or omits required dimensions;
 - a reviewer attempts to change group placement or the 40-week sequence.
 
-On agent disagreement, do not average verdicts. The stricter blocking judgement stands until the relevant passage is revised or the teacher explicitly overrides it.
+On agent disagreement, do not average verdicts. The stricter blocking judgement stands until the relevant passage is revised and the normal current PASS gates are satisfied.
 
-Teacher override must be recorded in the source record, including which gate was overridden and why.
+Teacher override requests must be recorded in the separate working source record, including the requested gate and reason. The current validator has no teacher-override input: recording a request does not waive the five current level PASS records or the current progression/parity PASS. The release package rejects a `teacher_override` key even when its other records already pass. Preserve actual verdicts and hold layout/release until the normal gate passes; this component implements no override execution path.
 
 ## Proposed repository structure
 

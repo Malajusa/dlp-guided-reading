@@ -2,7 +2,7 @@
 
 Status: **reviewer subsystem and controlled rendered sample validated within the scopes below; draft, unmerged and uninstalled**
 
-Updated 6 October 2026. The current complete deterministic suite passes **45/45**. The schema follow-ups require empty blockers/revisions on PASS and reject whitespace-only review summaries and dimension findings, matching the unchanged production validator's existing checks. The earlier authoring/schema-test reconciliation and PASS-collection fix remain preserved 38-test and 42-test checkpoints.
+Updated 6 October 2026. The current complete deterministic suite passes **49/49**. Schema follow-ups align PASS collections and nonempty prose with existing production checks. The latest narrow runtime change rejects the unsupported `teacher_override` package key without altering ordinary PASS requirements; the design now reflects the same no-override execution contract. Earlier 38-test, 42-test and 45-test results remain historical checkpoints.
 
 ## Evidence layers
 
@@ -13,7 +13,8 @@ Updated 6 October 2026. The current complete deterministic suite passes **45/45*
 | Published follow-up `5e52b3c` | 32/32 | Role/group schema binding and explicit no-override-bypass coverage |
 | Published reconciliation `87904cf` | 38/38 | Explicit both-deck authoring workflow and persistent checks for all three schemas |
 | Published PASS-schema follow-up `8eb7ef0` | 42/42 | Four regressions and verdict-dependent empty-blocker/revision constraints |
-| Current nonempty-prose follow-up | **45/45** | Three regression methods cover both summaries and all eleven dimension findings, including Unicode whitespace |
+| Published nonempty-prose follow-up `9f2f8e2` | 45/45 | Three regression methods cover both summaries and all eleven dimension findings, including Unicode whitespace |
+| Current override-input follow-up | **49/49** | Four regression methods cover valid-PASS and non-PASS override inputs, CLI failure audit and aligned authority documentation |
 | Frozen v1 behavioural corpus | 7 expected catches; 5 positive mismatches; 2 invalid-prerequisite parity cases | Historical outcomes remain unchanged |
 | Separately frozen v2.0.1 core cases | **12/12 expected outcomes** | Five complete new positives pass; seven unchanged negative cases are caught |
 | V2 positive parity | **PASS** | Five real current individual approvals preceded set review; production gate PASS |
@@ -51,7 +52,15 @@ The next review identified whitespace-only summaries passing JSON Schema while f
 
 The explicit character class avoids relying on engine-specific shorthand whitespace classes: [JSON Schema patterns use ECMAScript syntax](https://json-schema.org/understanding-json-schema/reference/regular_expressions), while the production rule is [Python string stripping](https://docs.python.org/3/library/stdtypes.html#str.strip). The production validator remains unchanged.
 
-The current complete suite passes 45 tests, including all three meta-schema checks. All 27 recorded V2 reviews remain schema-valid, both V2 release outcomes remain correct, and the original forward/stale-package replay remains PASS/FAIL. Production validator bytes, reviewer content, frozen fixtures and all recorded evidence are unchanged. These are deterministic checks and retained-record replays; no new model run or slide render is claimed.
+That checkpoint passed 45 tests, including all three meta-schema checks. All 27 recorded V2 reviews remained schema-valid, both V2 release outcomes remained correct, and the original forward/stale-package replay remained PASS/FAIL. Production validator bytes, reviewer content, frozen fixtures and all recorded evidence were unchanged by the whitespace fix.
+
+### Override-input and authority follow-up
+
+The design still described an executable teacher override despite the live contract providing none. This stale authority rule and its obsolete implementation-status line are corrected. Reproduction also showed that a `teacher_override` key was silently ignored on an otherwise valid PASS package. Non-PASS verdicts still failed with that metadata present: no release-gate bypass was demonstrated.
+
+Compatibility review found no closed-key package schema or documented top-level allowlist. The validator consumed four release inputs and ignored supplemental metadata. Rather than silently changing that wider interface, the narrow fix explicitly rejects the unsupported `teacher_override` key regardless of value, preserves ignored supplemental metadata, and documents that such metadata is neither validated nor release evidence. Override requests belong in the separate working source record.
+
+Four new test methods first reproduced ten failing subcases against `9f2f8e2`. The complete suite now passes 49 tests, including CLI audit output, both non-PASS level verdicts, both non-PASS set verdicts and metadata compatibility. All three meta-schemas and the retained V1/V2 package replays remain valid with their expected PASS/FAIL outcomes. Schema bytes, reviewer content, frozen fixtures and all recorded evidence are unchanged by this patch. No new model run or slide render is claimed.
 
 ## Preserved behavioural history
 
