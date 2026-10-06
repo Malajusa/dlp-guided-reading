@@ -1,0 +1,1001 @@
+{
+  "status": "PASS_CONTROLLED_CLOUD_RENDER_SCOPE",
+  "recorded_on": "2026-10-05",
+  "restored_and_hash_verified_on": "2026-10-06",
+  "artifacts": {
+    "guided": {
+      "name": "Guided_Reading_Print_T3_W9.pptx",
+      "sha256": "7a4368ebdb21ce0e62ad73538e0fcf50734696d18566da0ef6347f7bc687053a",
+      "slide_count": 131
+    },
+    "shared": {
+      "name": "Shared_Reading_T3_W9.pptx",
+      "sha256": "eb35019a28be80bce708d0e825383e595f32924d69b937a9244c78ae3671d0a2",
+      "slide_count": 8
+    },
+    "archive": {
+      "name": "Controlled_T3W9_Reading_Validation_Candidate_v5.zip",
+      "bytes": 18575425,
+      "sha256": "62142313ddd2e52cbd77bba7f7f3ac5da40e2960db0b596615f5371d1d45a5a4"
+    }
+  },
+  "guided_groups": [
+    {
+      "group": "Alpha",
+      "source_review_sha256": "c04a3f34a467886497ed7a484676262f30543b69d26b3d7b36ea82e5bd38aaa6",
+      "source_render_version": 4,
+      "final_render_version": 5,
+      "identical_png_carry_forward": true,
+      "slides": [
+        {
+          "slide": 1,
+          "png_sha256": "6352528e8e8e5e6346ae3a70351490343087462d21a7e1364e6927bed96ce711",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 2,
+          "png_sha256": "10fc2c1f7243e4b1071750f1c7cb16654cf080b777d845bc56bb07cdf909152e",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 3,
+          "png_sha256": "97a68573ee9fc1761f0047131cb53636d853222d9190cb37df57318529681052",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 4,
+          "png_sha256": "ca0575f90c96594e0304c07d3fcf12a19c440106c3793e5e8cc84c5c9b21bcc7",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 5,
+          "png_sha256": "2e117fe0cffca779dc06971fcaa710274ee9a4747f7069933a2151bafa81275a",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 6,
+          "png_sha256": "6d6b8eeb628dc7704c0362f38b4d883286dbb6c1528d09089307aa343180a9c0",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 7,
+          "png_sha256": "eb7d8208b36f6543d142723c833a267408b727aabd14202b8a590ca8d2ad969a",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 8,
+          "png_sha256": "7e2a8fdcc352da2664f1ccf1e936b03d6ccac53dbfd4d8e06afeda64b87c9766",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 9,
+          "png_sha256": "f6cb9155aa4a8f634c5a8c13999fba64cefa0e0dbf926d1eaaa743ed64f7288a",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 10,
+          "png_sha256": "e83bcd2e394093ad4e4434ae1a58e9e5f9d1a6eadc482c9f7f04d2f43c48aeca",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 11,
+          "png_sha256": "fc2e0883cb31acc9bb19bb1537956759db7f80c8540318c16ce31c02c2d822d3",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 12,
+          "png_sha256": "e9fb2e3ebfcff01a544b39f041cbdfa5c6946b1c1bb202751c0dbcb2450b1c09",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 13,
+          "png_sha256": "6bfa6c02405fe446ad9abfa40d76aa2740f6bc14ed2577d1760229d6a2f9ad64",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 14,
+          "png_sha256": "9f42d65fe8db4bb94e56c802aced086e6e0b162b626d7eb1bf9dcb9be61f97c8",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 15,
+          "png_sha256": "4dce5191824d88671988acaa5d44527b3e16a762a185e37146d17461822eb865",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 16,
+          "png_sha256": "868867fb5341f90f11d980f0107a967d49e352852b8e0bcb84a7aa6302ae9ef0",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 17,
+          "png_sha256": "e00f6f7b2d1b55ba95425203f2cc8b1cb7e749a3716d472130ae59f503df2b73",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 18,
+          "png_sha256": "4893173b9a670c70d0e1375af1764b04cd61e1e226ad553e6bd108158928b672",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 19,
+          "png_sha256": "e306ba021274c783f75a2a857ed99caa69b691dd372f4dff9399cf1cfa6328ef",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 20,
+          "png_sha256": "1d9d97ef1e7b313405bea7a0e035a606aa28c5c89a9dde25c6a54e0c7312152e",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 21,
+          "png_sha256": "e4002e3e5e8c42a0ade554ffcccadf697643359a43eacb99d6a9871ad4fcedf0",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 22,
+          "png_sha256": "8174d311be9c4ed303d0f3483096f41e3bc7bc448d387a0954063f666a71edac",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        }
+      ]
+    },
+    {
+      "group": "Beta",
+      "source_review_sha256": "4d29965144fcfa3aa47c31c15437cf03a3efb9f0935e565f64fad95194da8f06",
+      "source_render_version": 4,
+      "final_render_version": 5,
+      "identical_png_carry_forward": true,
+      "slides": [
+        {
+          "slide": 23,
+          "png_sha256": "b2a267baddcb926302bf35b6ed933f687af20dc26504dcb4b247a897dfd5ac82",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 24,
+          "png_sha256": "4e4b62363dd54af80307750adc4c488ef573251d05d6b2318ef1c8f4107d848e",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 25,
+          "png_sha256": "fe3ac517e13f3cf501476f2838785c0cd6c7210d136c789936b6da04dc2e2ad5",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 26,
+          "png_sha256": "a38bb32df0407866c4d742ec7490df51a5316501a4d9022c5e0ce3ca2b650ab4",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 27,
+          "png_sha256": "8762b78493ab23e84ce9ba8bb182f4bcf68e8cd5b533cec2b2f614542616eafe",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 28,
+          "png_sha256": "8f52cfd511b9ed60822144b4a6814839c25a0440b3a11f3b29ca0c9c12fbc35b",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 29,
+          "png_sha256": "56f3900cd67a98556f8e91e7cfbf4dff8d9a0e6932c514dd0ad7bef1c3e7fef4",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 30,
+          "png_sha256": "1778b01969c11ade7b58b3eb7b2c6c20631d702df128eb8a0af1adf99e7b0641",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 31,
+          "png_sha256": "e33160cade3d66471ed081beef176a1a80ac5b0f4c8056285ca226478119fd49",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 32,
+          "png_sha256": "a12374edb0de75c997e7c6fbe4bb5cbc5b732ae7b0ef71a4f2324bf77cce8ad4",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 33,
+          "png_sha256": "9df5b837474ee90aab3eeb5804305d87f6902cf6283bc98d1bf1b10cae77373e",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 34,
+          "png_sha256": "73455605e77de2f4e6432839fc7d1d27f429f6b3960b9ae74def221c8a51bff4",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 35,
+          "png_sha256": "1332c0cf9c3aa8f9a42338cf6f2c72ca33e6a1b14f2cdb833d9bf8c06ab6a379",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 36,
+          "png_sha256": "f383c4bdd002a8cb7ed620d74de26af34dcda72feee7a1cbed6cba6dda085a14",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 37,
+          "png_sha256": "abd660843d267e5615991e28536b6da0da9baace823f5dbe26bffcfcdeb56577",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 38,
+          "png_sha256": "75a09693ea2de13090f82c9f3631640755841b774a1c5d0fc8e4fe011644c4b2",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 39,
+          "png_sha256": "bb0adf056f39d297eab1bfca40fcfb379f6459d1e81793d78e22487ada131ad3",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 40,
+          "png_sha256": "4d6ffacdb8cbb4464ecaf6f0d7ae5891251178f440d1acffdb7aa442eddc2f22",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 41,
+          "png_sha256": "f943c23f5ff43d7fd16f627cc8d244972a8b0c1a7438a9041bbe7bd8339c17dc",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 42,
+          "png_sha256": "a9c3ecbdb87c1a2d5d6cacc822b7d234e73b9d6412924c6d73912cbc2c04d783",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 43,
+          "png_sha256": "ac43a4e33d7244865e9deaf4b70787b1af873cca5890e66dd644fac4c6f92981",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 44,
+          "png_sha256": "934eea7468e4dd4c30f1844aadc3a81b5a7dd6aa833976ed6f204c686e520755",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 45,
+          "png_sha256": "05e18ad3690768313edcc322e90883cac844e6136eaa2ccc7546733ded4f4b1b",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 46,
+          "png_sha256": "a88dd0e1f74569e9b9dcb5447c83413448966d32876710bfcba696eae77b5ddf",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 47,
+          "png_sha256": "cf67bdc4bf077c48ddb1ad5b8471e7f84a71fe121deb0053597b5fe4db8c62d8",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 48,
+          "png_sha256": "98e6127109ff4e7d543e70963d7c1a1e15a4bbcf65a43d0643b7e858ab2732b1",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 49,
+          "png_sha256": "1a30edf917182ca49b6c898a5bc734011811dfa8ec8b2943afb8078f24042d74",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 50,
+          "png_sha256": "f39c7ca4964898b1f4f9bd38da59f27ccf94da916220c4aad5f40a193dcc1eba",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 51,
+          "png_sha256": "e229f3e9eb46da1d14fdc08ab5c73550cba8cda16d66f2b18798e8649ebef09b",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        }
+      ]
+    },
+    {
+      "group": "Gamma",
+      "source_review_sha256": "aeba5d6a6ee6d4926552039b940c1210f16794f200abe50cf07c6808f5a3badc",
+      "source_render_version": 5,
+      "final_render_version": 5,
+      "identical_png_carry_forward": false,
+      "slides": [
+        {
+          "slide": 52,
+          "png_sha256": "ccd48a298bedcd48032c9cce58263d1c7b6538ebd30a85040a4b659766f2f184",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 53,
+          "png_sha256": "8b7f469fecde6bf770bb5e309d17a8a0f513066fbef27043cc7babdf5437bade",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 54,
+          "png_sha256": "d3ad16f8ac8fef636755267d5c0730bcada95ea7f355c80fd5a143139c5e6e3a",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 55,
+          "png_sha256": "dec1101483f5a9b0084eac653eaeb04bd50e35ba591e7f6016aa09e4f8603d40",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 56,
+          "png_sha256": "913dde742a23f98a4fe9a17a4aa87e700e090cb56073b14845064fcdd2b52bdf",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 57,
+          "png_sha256": "64f0c934344371319f0fcd4421fd03a116fdb67e9a5dd35405ee0e36c78195f8",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 58,
+          "png_sha256": "d8eee0a363c0915506feb5d2c45351ca85a9ac07899048a7990d12158267c8ef",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 59,
+          "png_sha256": "0a0cf0272fb4668246498052790f8459ea6a7924771442bc8665464a5d35fd27",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 60,
+          "png_sha256": "4ab08b2bd424dc45f5a6471f79c2ed0c31f1eb2c899b9d6275d9e5de3bc760aa",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 61,
+          "png_sha256": "50c1a0c3450845971f5ac8d7fc7d1e66f447cd5012b42b13e721ea09204bb335",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 62,
+          "png_sha256": "3b12047dc1e89c73cd545402ff2a5f978df102a1e255866c8ecff6378da55c3c",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 63,
+          "png_sha256": "45e197cff9035ac5d34c0cda6258b843ea686b2194637617c7fe6e2455742208",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 64,
+          "png_sha256": "4793192c5f16107260d21c465e69f8a9c2cd18ad1a1ba7fcdbf2c6d28b000b12",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 65,
+          "png_sha256": "a3b73aa3f5bc23abf840b1b9fa44641715d8902019a39793f3bae19544512741",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 66,
+          "png_sha256": "654f3875ecac0c264cbbf051b401a9d02bccb2d7c4b32db53aa72e5402fb6c16",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 67,
+          "png_sha256": "bdac2b2f9783f23aabb3759bcf5a5920309a830903df29aabc78032ec8e353ec",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 68,
+          "png_sha256": "d2b832279ab4ad68b71fbc6340755b6ecf5a30338f78879f41fbf16b60eac27d",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 69,
+          "png_sha256": "87dc55a32b918828733bc41aaebe03b59cf12b74172abde79f967b111060d25e",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 70,
+          "png_sha256": "e40ea9235da2dbd6a6c3e3aecbd290e075e9e152894d2340a774ce9138bd45fd",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 71,
+          "png_sha256": "9f26f3bc94af15ef60698016c121dd0cee54a1380c8b624ffd1d6dbb91fc806c",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 72,
+          "png_sha256": "68832ddce49f714839f4f2e402ee4fd08190ced7d26173a6f5a95276c412a3d9",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 73,
+          "png_sha256": "9fcaddbf8833b07bd7bd74d1f75ecd7d4865014751735ed8271c9644c6c59ce2",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        }
+      ]
+    },
+    {
+      "group": "Delta",
+      "source_review_sha256": "4e427b9b9cf973977f552cc2b0b43f540f2c9bf288370061ba3dc38fedb90da5",
+      "source_render_version": 5,
+      "final_render_version": 5,
+      "identical_png_carry_forward": false,
+      "slides": [
+        {
+          "slide": 74,
+          "png_sha256": "9793ed9cd4b29a2934e0119a174dfc2f1b43f9f65d22a706f21b626291dbed9b",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 75,
+          "png_sha256": "5aeec7cbac31c25942a649c1c8ad57c28294c0d60e9c984e519e3e6e62df19f5",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 76,
+          "png_sha256": "a3596ea53bc3abc24d22d35cb17c36a7c433d1586cf285513e1610eed22c097b",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 77,
+          "png_sha256": "c5fcfbff23d529770c48662ff23f5659c09bd21c39bf1e68e6968b669e1df47d",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 78,
+          "png_sha256": "47b3c495092cb05fce7360270dba98c3642d0293a50bc08bd48150b4c245858f",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 79,
+          "png_sha256": "11d83132acc651caf364e541fd7722a080dbf3628f3212613734ba091f849485",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 80,
+          "png_sha256": "621d8cc206e3bbbc7ec5d484bf44b35487ffe35085cbe2e74276b7b608fbf632",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 81,
+          "png_sha256": "5a121988ae96149e6901d83043ae9d2cbe21fe3db200a37cf37fdc60f8a2e944",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 82,
+          "png_sha256": "06941c1814a75c64ac856719f675080ec68da07bd823aeccffc44bd24756caa6",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 83,
+          "png_sha256": "93dc59334445eb7dcd763a41cf757d95d9016bb8128a221411c2ad87af270053",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 84,
+          "png_sha256": "b0a28f2f3e71011104589c2726ab0ba0af000792d4fe3e5ebcfd35fd59280e7d",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 85,
+          "png_sha256": "f1bf5e9722e160dbd324c58debb665cf0622e5161ac6473da9af02257933f3a2",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 86,
+          "png_sha256": "d0aaba73bfa5b44e0f64d23da0d8e1e26091cd3671e9423667c545f1d1d41450",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 87,
+          "png_sha256": "1b24c5ebdb6e930aa0921c86fa07adba3f7767544b1d9d6ebe468010a6d8eef0",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 88,
+          "png_sha256": "59cd8d40b60123b526ce73e48fed0cd938cfcc3b60a304de381c0bbdb5fa20f0",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 89,
+          "png_sha256": "66a9598622332dd3b93d0d3ae845fd1025e750c19c5fe7d79b93087bf4fc74ec",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 90,
+          "png_sha256": "9bf0da6ec787a0179fe2dc12b0b221a97d5dde4700cd35b630b4c714f9cde4ca",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 91,
+          "png_sha256": "8a67750150a77971ac4cecbcbfad692ca0d468163472a5017c652a2ab2ae680d",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 92,
+          "png_sha256": "ba495160f8c978bca8fc319251717b13f51529f9de4766bc4d6ec49846134004",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 93,
+          "png_sha256": "60d4e496ff529eb63bb68d372aef188180579619cd27c0bfc04539ea04428b7f",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 94,
+          "png_sha256": "32926a4ed34dec83d37bacd686940bb0649210674a4dd63d1471ed02cf4d6cfe",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 95,
+          "png_sha256": "5394bec43ba09e03f35ec4ba60051ee16753ba734b3c75b6d75f437c16a798e7",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 96,
+          "png_sha256": "08874ab1bf65b79772f74c6839dc3ffbe632fe94eaa24ffb6c35d2687e0a4014",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 97,
+          "png_sha256": "a0d6b64c0a33694d51f56b5494ab91fdd4ea1877fbc0620d3514db4b0d89495b",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 98,
+          "png_sha256": "53435514af0a0bc7e1b3c4be7319d70931a56da771259a6233f9c70add0d6bf0",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 99,
+          "png_sha256": "c9ae5e4e6338cd2822c698c75aa1202965bb7decf030ddee9974478486924412",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 100,
+          "png_sha256": "f3fa5b720171448d8b68bc98c77f6dfe970aa8d6eb15315ca95fceefbf97d9e3",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 101,
+          "png_sha256": "13c1ba21b87081bf66676da017ef6247d3ee4a261c857415372cf3c656af55b4",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 102,
+          "png_sha256": "006c52a105aa80e955ffc15dfb5cbbf20fe48e995fb9794abeba50cea3ee4c16",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        }
+      ]
+    },
+    {
+      "group": "Epsilon",
+      "source_review_sha256": "98605814abfc4eb424ab3207844e2c9a5a172036dfe9c5e1b893be987179c7df",
+      "source_render_version": 5,
+      "final_render_version": 5,
+      "identical_png_carry_forward": false,
+      "slides": [
+        {
+          "slide": 103,
+          "png_sha256": "a50cdb635dbe71437ae35d8fc79e065dd841b0bbe3b3fc32ec7a647df95d643b",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 104,
+          "png_sha256": "fc793ba696b78a7c5122952eb3deb5aac9480a00f9c041bd93b14f87250cc649",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 105,
+          "png_sha256": "cadfb519f3f9f134cb425d15826ac4ce71e162627aba219f0e48f8868e7867f1",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 106,
+          "png_sha256": "c4815dc37097a80d460f95236aa7de0b5ad2f97ca29708fc20b0b5ee90bc9fdc",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 107,
+          "png_sha256": "92ea807b4d3967c11bdd8b512e975aaa8680ea1d7da273f86c4ae126ba121dea",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 108,
+          "png_sha256": "5f14b7b449f2e341d75664e0c630cd7323d279b872de133fb005a38c7817f572",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 109,
+          "png_sha256": "fbca4bdb4a79ac1258887bf7edde8193249fdc1a188beb65e23125013be32253",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 110,
+          "png_sha256": "9c28f6252681e347dd82ff1b5be74239f76809147ab6f6f8ae6584b637ef26a9",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 111,
+          "png_sha256": "5a04db229dde8357ff74eccf0caaa8fdfa3b7c66230467a3f87375ca4acdef29",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 112,
+          "png_sha256": "65dd17b77038fee0e614e8d2b07c272d5363bf3e5f0467ae2db60c16007b0085",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 113,
+          "png_sha256": "d5ad829b5fe71138a21d857213de0248d5361c2299ff353adceb3faf97a9e1a2",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 114,
+          "png_sha256": "a3334bd9f01b013f164cf2d7b9d8ac6662d72c991df148c0f6618b4f1418f232",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 115,
+          "png_sha256": "384ca5a608071dd3e7de4af7a36e90513080dfba3527d759417b7d96d84966d6",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 116,
+          "png_sha256": "924234cc7457afe48c35fdf324cd214bbe82d81d98bc10cefa9ff176b68ccf76",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 117,
+          "png_sha256": "a3227dc101d5c70a5c264b6633cc37d49b93bb3fbeea6323c717ddb6549529c0",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 118,
+          "png_sha256": "c8a48ac15465d4d7d2552002b67948ba8e3ca9ea2e190be06316f30c93448f8d",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 119,
+          "png_sha256": "0329f59ecbf8111633cf65773acac2a7e037fb3e1b1a54ad91ead66cc2b6b44f",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 120,
+          "png_sha256": "de3b3af686e1337e537847a16d8692e33b323be6519c2a84fa17edd8670f9acd",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 121,
+          "png_sha256": "cf3ba25ea0329ca4c40548ed34fbfe3974293af8512e076f07a677475385124f",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 122,
+          "png_sha256": "843dd3eea852283f6628faaf73b421751f7423a98bba20848979dff20a5901a8",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 123,
+          "png_sha256": "3177cb71a58d55332581bfe977874078b746c1c13a57bc935340674b3379d2f9",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 124,
+          "png_sha256": "de08a82b18d02b094cc1932c7148160df316b9dfa3103a5177ed90d2056c9863",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 125,
+          "png_sha256": "81333c83addc13ef0dd3922b75ed2e53fecc50f53d51811cdc9e464e2d4d58f8",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 126,
+          "png_sha256": "23e0179a62f62682092cb3bc7527bb52c92474aa3b2a254c330a77b226e796c2",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 127,
+          "png_sha256": "d85857bc190f66979a82e4422c22b916a05d221afd2634562dc4836ac8352816",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 128,
+          "png_sha256": "399ad2f3e1f80e119f1be1b1858aa31d92635fc62881a8fd415a7dd012465c4b",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 129,
+          "png_sha256": "52702e168b6ec59dd52e06c7adcd384a78a1de42834f468a7a681d24547ff9d8",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 130,
+          "png_sha256": "03c69aa5cc71eff8e99eab1a3dc4c8a4d1d550351f3b144d373d4e49409e32f1",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        },
+        {
+          "slide": 131,
+          "png_sha256": "15791dd761d9c52c359b42b37baf378f38706ba2a8f132f40e786a8034c0a1ee",
+          "status": "PASS",
+          "viewed_individually_at_full_detail": true
+        }
+      ]
+    }
+  ],
+  "shared_slides": [
+    {
+      "slide": 1,
+      "png_sha256": "dc900550041105fdfa68b43b14a3551554bfd5736654eba7d8901655a4e9e9eb",
+      "status": "PASS",
+      "viewed_individually_at_full_detail": true,
+      "finding": "Full paragraph and one question fit their separate blue panels with clear margins."
+    },
+    {
+      "slide": 2,
+      "png_sha256": "4712d2cb347c8d6982d2ffb31ea057c4e4f86825f0e6a3b13317804310bd6724",
+      "status": "PASS",
+      "viewed_individually_at_full_detail": true,
+      "finding": "Matched answer is visually dominant; repeated question and short evidence note fit."
+    },
+    {
+      "slide": 3,
+      "png_sha256": "b5665a25d8172fd5cdc8e12becf4d3c71ffa363c646631bf731e9e36d3c74fd4",
+      "status": "PASS",
+      "viewed_individually_at_full_detail": true,
+      "finding": "Longest claim wording and question are complete and readable; no overlap."
+    },
+    {
+      "slide": 4,
+      "png_sha256": "88a829b61ec9c721e8cd1851c31cea930187b2d41c0532cd15e83f0fe10491b6",
+      "status": "PASS",
+      "viewed_individually_at_full_detail": true,
+      "finding": "Repeated question fits across two lines with bottom padding; three-line answer remains contained."
+    },
+    {
+      "slide": 5,
+      "png_sha256": "fa3ceb5854acde6a4357d7a45ba82b740e65d10da027bfffbe72586771dc0f38",
+      "status": "PASS",
+      "viewed_individually_at_full_detail": true,
+      "finding": "Paragraph and single independent-check question are readable; no clipping."
+    },
+    {
+      "slide": 6,
+      "png_sha256": "432ce2874effb9c4126286ac0e46e1c209ebd1a7b97a6f643df78bd8e7b172e5",
+      "status": "PASS",
+      "viewed_individually_at_full_detail": true,
+      "finding": "Matched answer and evidence explanation are clear, complete and contained."
+    },
+    {
+      "slide": 7,
+      "png_sha256": "a9ff759889569f1bee87ef17bff990624b2d7007f207ef942dcddd3278913946",
+      "status": "PASS",
+      "viewed_individually_at_full_detail": true,
+      "finding": "The long paragraph fits the expanded panel with a clear bottom margin; question fits below."
+    },
+    {
+      "slide": 8,
+      "png_sha256": "0bdcb29157c5846792b6d9d5c4649e8056c76df20d423dd7dd7ac93535b7b3d1",
+      "status": "PASS",
+      "viewed_individually_at_full_detail": true,
+      "finding": "Matched answer is visually dominant; evidence note and footer fit with no clipping."
+    }
+  ],
+  "uninspected_slides": [],
+  "structural_audit": {
+    "status": "PASS",
+    "errors": [],
+    "warnings": [],
+    "checks": [
+      "Guided deck uses A4 landscape geometry",
+      "Guided deck slide coverage and print order are complete",
+      "Compared canonical Alpha-Epsilon passage text for likely duplication",
+      "Shared Reading slides follow the declared question/answer sequence",
+      "Compared Shared Reading and Guided Reading for likely passage reuse"
+    ],
+    "manual_gates": [
+      "Render and inspect every slide at full size",
+      "Confirm teacher/student passage, question, answer, and evidence parity",
+      "Confirm factual, cultural, Health-safety, and source integrity",
+      "Confirm genuine Alpha-Epsilon differentiation and visual usefulness",
+      "Confirm student-facing slides use only Greek group names and expose no group levels",
+      "Confirm print preview yields one teacher sheet and seven complete student sets per group"
+    ]
+  },
+  "semantic_structural_checks": {
+    "status": "PASS",
+    "scope": "Exact displayed-string reconstruction, hash bindings, questions, collation, editable text and Shared pair parity. Does not certify pedagogy, visual rendering, host application behavior or classroom release.",
+    "guided": [
+      {
+        "group": "Alpha",
+        "copies": 7,
+        "exact_passage_reconstruction_sha256": "8c2762847aeeb91ffe2d01b2decb7366e6e1fa64eb378148fd542b8977c8d082",
+        "verbatim_questions_per_copy": 3,
+        "teacher_questions_match": true,
+        "no_raster_images": true
+      },
+      {
+        "group": "Beta",
+        "copies": 7,
+        "exact_passage_reconstruction_sha256": "7e513c29075f264696bf1c705930117f73220acb38c87bdc0c2c1310257e24dc",
+        "verbatim_questions_per_copy": 3,
+        "teacher_questions_match": true,
+        "no_raster_images": true
+      },
+      {
+        "group": "Gamma",
+        "copies": 7,
+        "exact_passage_reconstruction_sha256": "61b187548b3588f93c906ad12f9d49e7c9329ed174874c05a028c3eb62298805",
+        "verbatim_questions_per_copy": 3,
+        "teacher_questions_match": true,
+        "no_raster_images": true
+      },
+      {
+        "group": "Delta",
+        "copies": 7,
+        "exact_passage_reconstruction_sha256": "12bcbed047f2ae28f9c6d00b635fd2f21b656bf8ccffcd45c7f33a18e907aa29",
+        "verbatim_questions_per_copy": 3,
+        "teacher_questions_match": true,
+        "no_raster_images": true
+      },
+      {
+        "group": "Epsilon",
+        "copies": 7,
+        "exact_passage_reconstruction_sha256": "1003f4875b2501b1be354a969e5f370f6636cc8a51d684405e17db3ce8294056",
+        "verbatim_questions_per_copy": 3,
+        "teacher_questions_match": true,
+        "no_raster_images": true
+      }
+    ],
+    "shared": {
+      "pairs": 4,
+      "strict_adjacent_pairs": true,
+      "question_paragraph_and_answer_exactly_match_records": true
+    },
+    "approved_source_hashes": {
+      "candidates-cycle-1.json": "f24e689fad8dbe36d3f973a3e4a60e45d7dbc24329a0a06451e03460c2d42a6b",
+      "question-records.json": "ce3b737d49eb6ece1e6c9fbfebcfd7b1f203f8ad609be43df516f9b46321bfc1",
+      "teacher-records.json": "b030b9818c13b171b6adddd0b5f33f9503a25a95facc13227f95805349fd82cc",
+      "shared-reading-records.json": "247ed8908c937d72f073682be70eb3a9717c7f6c74b6003c1e5165e1ae2f8f1e"
+    },
+    "decks": {
+      "Guided_Reading_Print_T3_W9.v5.pptx": "7a4368ebdb21ce0e62ad73538e0fcf50734696d18566da0ef6347f7bc687053a",
+      "Shared_Reading_T3_W9.v5.pptx": "eb35019a28be80bce708d0e825383e595f32924d69b937a9244c78ae3671d0a2"
+    }
+  },
+  "limitations": [
+    "These records concern the controlled bridge/fair Guided pack and separate Shared seed-swap passage, not the new V2 library-book-swap candidates.",
+    "Recorded images came from the supplied artifact-tool renderer, not Microsoft PowerPoint or a physical printer.",
+    "Shared declares Trebuchet MS; it was absent from the recorded render environment and the actual fallback family was not reported.",
+    "Current teaching dates, timetable and assessment needs were not verified; no installation, scheduling or integration was performed."
+  ]
+}

@@ -36,6 +36,13 @@ class SkillPitchGateContracts(unittest.TestCase):
         ):
             self.assertIn(phrase.lower(), text.lower())
 
+    def test_skill_explicitly_retains_authoring_workflow(self):
+        text = self.read("SKILL.md")
+        section = text.split("## Create PowerPoint outputs", 1)[1].split("## Verify and release", 1)[0]
+        for phrase in ("For both decks", "installed Presentations skill", "artifact-tool", "speaker notes",
+                       "every slide at full size", "overflow checks"):
+            self.assertIn(phrase, section)
+
     def test_powerpoint_contract_retains_review_evidence(self):
         text = self.read("references/powerpoint-pack-contract.md")
         for phrase in (

@@ -1,100 +1,92 @@
-# Level-Pitch Agent Validation
+# Guided Reading validation status
 
-Status: **implementation and controlled forward workflow pass; legacy behavioural corpus unresolved; draft release candidate**
+Status: **reviewer subsystem and controlled rendered sample validated within the scopes below; draft, unmerged and uninstalled**
 
-Validated on 5 October 2026 against PR3 source commit `6239dcfbe0852f794ed28157d005d2ef91dc831b`. The immutable 30-file source snapshot was checked against GitHub blob hashes before work. All original reviewer roles, authoritative profiles, question standard, 40-week overview and 14-case fixtures remain unchanged.
+Updated 6 October 2026. The final three-file reconciliation was applied to a clean reconstruction of published commit `5e52b3cc38e03ba32f00a724e74464a99f6de055`. All 35 baseline files matched their GitHub Git-blob hashes. The restored patch files matched the exact approved artifact hashes, and the current complete deterministic suite passes **38/38**.
 
-## Evidence summary
+## Evidence layers
 
-| Layer | Result | What it establishes |
+| Layer | Actual result | Scope |
 | --- | --- | --- |
-| Source provenance | Verified | Exact PR3 source, no claim about an installed desktop copy |
-| Original deterministic baseline | 18/20 | Two contract tests failed despite the earlier 20/20 report |
-| Repaired original suite | 20/20 | Contract terminology and structured parity record repaired without changing tests |
-| Final deterministic suite | 28/28, exit 0 | Eight added regression tests cover schema and malformed-input handling |
-| Independent schema mutation probe | 752 cases; 656 schema-invalid; zero invalid PASS, zero unexpected exceptions | Targeted record-shape robustness |
-| Frozen behavioural corpus | 7 expected catches, 5 positive mismatches, 2 input-contract-blocked parity cases | Actual results below; not an all-pass corpus |
-| Fresh T3W9 writer and pitch workflow | PASS | Real isolated review, revision, current-hash binding and parity |
-| Final question/evidence QA | PASS | 15 hash-bound questions reviewed against exact approved passages |
-| Rendered pack / real desktop host / installation | NOT RUN | No production or classroom release claim |
+| Original source baseline `6239dcf` | 18/20 | Two pre-existing documentation-contract mismatches were reproduced |
+| First repaired checkpoint | 20/20, then 28/28 | Contract repairs and eight validator regressions |
+| Published follow-up `5e52b3c` | 32/32 | Role/group schema binding and explicit no-override-bypass coverage |
+| Current reconciliation | **38/38** | Explicit both-deck authoring workflow and persistent checks for all three schemas |
+| Frozen v1 behavioural corpus | 7 expected catches; 5 positive mismatches; 2 invalid-prerequisite parity cases | Historical outcomes remain unchanged |
+| Separately frozen v2.0.1 core cases | **12/12 expected outcomes** | Five complete new positives pass; seven unchanged negative cases are caught |
+| V2 positive parity | **PASS** | Five real current individual approvals preceded set review; production gate PASS |
+| V2 duplicate challenge | **REVISE_LEVELS, as expected** | Identical Beta/Gamma passages earned real separate approvals, then failed set progression; production gate FAIL |
+| V2 Alpha content-loss precondition | **REJECT upstream** | Parity was not dispatched; no semantic parity result is claimed |
+| Controlled T3W9 rendered sample | **139/139 slides visually inspected** | 131 Guided and 8 Shared slides; semantic, structural, editability/package and overflow checks pass in the recorded cloud renderer |
+| Actual PowerPoint/printer host and integration | **Not verified / not performed** | No production installation or classroom scheduling claim |
 
-Full synthetic inputs, raw review outputs, revision history, passage hashes, audits and red/green test logs are retained in [the validation evidence](2026-10-05-level-pitch-evidence.json).
+Local/workspace test results are not hosted CI results. The previously observed GitHub Actions checks were Copilot code review. Their completion must not be presented as execution of the deterministic suite; check the exact current commit's hosted checks separately.
 
-## Implementation repairs
+## Current code and contract changes
 
-- Both production references now consistently name the existing **three revision cycles** limit.
-- The PowerPoint source record explicitly names `progression_review` and its authoritative schema.
-- The validator rejects unexpected reviewer properties and non-string list items, rather than accepting schema-invalid PASS records.
-- Malformed verdict types return FAIL rather than raising unhashable-type errors.
-- CLI parsing and excessive-nesting failures write structured FAIL audit files.
-- No new runtime dependencies were introduced; the production validator remains standard-library-only.
+- Production references consistently retain the three-revision-cycle limit and the structured `progression_review` record
+- The validator rejects unexpected reviewer fields, non-string list entries and malformed verdict types; malformed CLI inputs produce a structured FAIL audit
+- The level schema encodes exactly the five valid role/group pairs
+- Teacher override requests may be recorded, but the current validator has no override input and the request does not waive current level/parity PASS requirements
+- Writer authority remains authorship-only; its grammar was clarified without granting self-approval
+- Both decks now explicitly follow the installed Presentations skill's current required workflow, speaker-note provenance, rendering, overflow checks and every-slide inspection
 
-The independent patch audit reproduced the six schema failures on the immutable baseline, then verified all eight new regressions and the final suite. Its 752-case mutation probe used the published schemas as an independent oracle. This is targeted evidence, not a proof over every possible input. The inherited extreme-nesting exception for direct Python callers remains a nonblocking limitation; the documented CLI gate is protected.
+The last item is an entrypoint/scope clarification. Those authoring requirements already survived through mandatory references; no effective workflow bypass was demonstrated. The surviving workflow sentence sat under Guided print geometry, so stating both-deck scope directly avoids ambiguity.
 
-## Frozen behavioural cases
+The final reconciliation changes only `SKILL.md`, `tests/test_skill_pitch_gate_contracts.py` and the new `tests/test_published_schema_contracts.py`. Runtime validators, schema definitions, profile assignments, reviewer authority, original fixtures and sample content are unchanged by that reconciliation. Persistent tests now cover all three meta-schemas plus representative valid/invalid progression and orchestration records. Deliberate schema weakening/malformation checks showed those tests detect the intended defects. The production validator remains standard-library-only; `jsonschema` is a declared test-only dependency.
 
-Every case used a fresh isolated reviewer context with only its exact candidate, approved context, role, profile definitions and output schema. No expected verdict, diagnostic category, descriptive case label, neighbouring passage or prior verdict was supplied. Every output was checked against its JSON schema, role/group identity and exact passage hash. Original fixture expectations were frozen throughout.
+[Current patch and test evidence](2026-10-06-patch-validation.json) records exact source identities and the fresh test log. The earlier [hosted-review follow-up](2026-10-05-hosted-review-followup.md) remains a 32-test historical checkpoint, not the current headline.
 
-| Case | Frozen expected | Actual | Result |
-| --- | --- | --- | --- |
-| alpha-childish | REVISE/REJECT | REJECT | PASS |
-| alpha-dense-syntax | REVISE/REJECT | REJECT | PASS |
-| beta-vocab-only | REVISE/REJECT | REJECT | PASS |
-| gamma-underpitched | REVISE/REJECT | REVISE | PASS |
-| delta-length-only | REVISE/REJECT | REVISE | PASS |
-| epsilon-long-year5 | REVISE/REJECT | REVISE | PASS |
-| epsilon-topic-drift | REVISE/REJECT | REVISE | PASS |
-| alpha-well-pitched | PASS | REVISE | FAIL: expected PASS |
-| beta-well-pitched | PASS | REVISE | FAIL: expected PASS |
-| gamma-well-pitched | PASS | REVISE | FAIL: expected PASS |
-| delta-well-pitched | PASS | REVISE | FAIL: expected PASS |
-| epsilon-well-pitched | PASS | REVISE | FAIL: expected PASS |
-| parity-beta-gamma-duplicate | REVISE_LEVELS/REJECT_SET | REVISE_LEVELS | BLOCKED: invalid prerequisites |
-| parity-alpha-content-loss | REVISE_LEVELS/REJECT_SET | REVISE_LEVELS | BLOCKED: invalid prerequisites |
+## Preserved behavioural history
 
-All seven defect cases identified their required diagnostic category. All five prescribed positive excerpts were returned for revision. Their common shortcomings were missing concrete corroborating evidence or source-purpose information; Gamma–Epsilon also lacked the distributed evidence or independent synthesis required by their profiles. Complete forward-test candidates did pass the unchanged roles, so these results do not demonstrate an indiscriminate reject-all policy.
+The original fourteen-case fixture and [its complete recorded evidence](2026-10-05-level-pitch-evidence.json) remain byte-for-byte unchanged. The five short prescribed positives were returned for revision because their inputs did not supply sufficient evidence, purpose or independent synthesis demands. The original parity cases contained placeholders and lacked five current individual PASS prerequisites. Those findings have not been relabelled as successes.
 
-Both parity cases contain placeholder texts and no current individual PASS records. Their reviewers reported the expected duplication/content-loss observations, but the missing prerequisites prevent counting either as a valid semantic parity pass. No approvals were fabricated.
+The separately versioned v2.0.1 corpus froze new candidate bytes, expected outcomes and diagnostic targets before execution. It uses a different fictional library-book-swap scenario. Fifteen fresh level contexts and two fresh set contexts produced the recorded outcomes above without revising a fixture or weakening profiles during the run.
 
-**Do not relabel this 14-case corpus as passing.** Preserve these results and review a separately versioned, complete positive/parity fixture design before treating a replacement corpus as a release gate. Changing the original expected outcomes after observing these results would invalidate the baseline.
+[V2 results](2026-10-05-v2-behavioural-results.md) and [detailed V2 input/output evidence](2026-10-05-v2-behavioural-evidence.json) preserve actual reviews, hashes and real-record set packages. The duplicate challenge reached a legitimate semantic review only after its prerequisites genuinely passed. The Alpha-loss path demonstrates upstream blocking only.
 
-## Controlled Term 3 Week 9 forward test
+Isolation claims are limited to fresh contexts and controller-supplied inputs. Full provider tool history and filesystem-enforced confinement were unavailable. Worker access statements are attributed self-reports. No provider logs, favourable approvals or strict-receipt-wrapper success were fabricated. Some declared SVGs were inspected as source without rendering, so these pitch reviews do not establish final print scale.
 
-- Reading Focus: Reliability and credibility
-- Learning Intention: Evaluate whether information deserves confidence.
-- Success Criteria: I can use authorship, evidence, purpose and consistency to make a supported judgement about reliability.
-- Context: a fully fictional community fair and competing bridge-access messages; no classroom personal data or real emergency advice.
+## Controlled forward test and rendered pack
 
-A central writer created all five complete candidates. The controlled initial Alpha supplied its intended reliability judgement, while initial Epsilon used lengthy ordinary prose with local, explicit conclusions. Reviewers were blind to these injected defects.
+The original controlled T3W9 bridge/fair forward test caught Alpha's answer giveaway and Epsilon's length-without-complexity defect. The central writer revised those two passages once; their same assigned reviewers then passed them. Beta, Gamma and Delta passed initially and stayed byte-identical. A new set reviewer passed the current five-text package, and the production validator passed it. A later Epsilon wording mutation correctly failed its current, individual-review and set-review hashes.
 
-| Group | Initial verdict | Revision count | Final verdict |
-| --- | --- | --- | --- |
-| Alpha | REVISE: answer giveaway | 1 | PASS |
-| Beta | PASS | 0 | PASS |
-| Gamma | PASS | 0 | PASS |
-| Delta | PASS | 0 | PASS |
-| Epsilon | REVISE: under-pitch and supplied synthesis | 1 | PASS |
+Only after current pitch/parity approval were the fifteen question records finalised and independently checked. The resulting [controlled rendered-pack report](2026-10-05-rendered-pack-validation.md) and [per-slide evidence](2026-10-05-rendered-pack-evidence.json) cover all 139 final images. Real rendering found and repaired overlaps, overflow, panel-fit problems and orphaned headings without changing approved Guided wording. Do not confuse this rendered bridge pack with the separate V2 library passages.
 
-The central writer repaired only Alpha and Epsilon. Beta, Gamma and Delta remained byte-for-byte unchanged. The same assigned level reviewers rechecked their revised passages. Only after five schema-valid current individual PASS records did a new progression/parity reviewer receive the complete set; it returned PASS with all five exact hashes. No teacher override was used.
+Shared retains the verified exemplar's Trebuchet MS declaration, but the recorded cloud renderer lacked that font and did not report its fallback family. Exact Trebuchet/PowerPoint appearance remains unverified. All scenarios are fictional; no pupil personal data is included.
 
-| Group | Revision cycle | Final passage SHA-256 |
-| --- | --- | --- |
-| Alpha | 1 | `8c2762847aeeb91ffe2d01b2decb7366e6e1fa64eb378148fd542b8977c8d082` |
-| Beta | 0 | `7e513c29075f264696bf1c705930117f73220acb38c87bdc0c2c1310257e24dc` |
-| Gamma | 0 | `61b187548b3588f93c906ad12f9d49e7c9329ed174874c05a028c3eb62298805` |
-| Delta | 0 | `12bcbed047f2ae28f9c6d00b635fd2f21b656bf8ccffcd45c7f33a18e907aa29` |
-| Epsilon | 1 | `1003f4875b2501b1be354a969e5f370f6636cc8a51d684405e17db3ce8294056` |
+## Reproduce the deterministic and recorded-package checks
 
-The final pitch-review package returns **PASS / exit 0**. A separate negative test appends wording to approved Epsilon while retaining its recorded hashes and returns **FAIL / exit 1**, identifying all three stale states: current passage hash, Epsilon level-review hash and progression/parity hash.
+```sh
+python -m pip install -r requirements-dev.txt
+python -m unittest discover -s tests -v
+```
 
-Only after that gate passed were 15 final question records written. They are hash-bound to the approved text and independently checked for answerability, evidence location/distance, scaffold neutrality, uncertainty, group progression and student-facing Greek labels. No passage wording changed during question writing or QA. No layout was created before approval.
+The committed data permits mechanical replay of the two V2 set packages:
 
-## Release boundary and next steps
+```sh
+python - <<'PY'
+import json
+from pathlib import Path
+from scripts.validate_pitch_review_package import validate_review_package
+record = json.loads(Path('docs/validation/2026-10-05-v2-behavioural-evidence.json').read_text())
+expected = {'s-726c': 'PASS', 's-5a10': 'FAIL'}
+for case in record['set_tests']:
+    audit = validate_review_package(case['package'])
+    assert audit['status'] == expected[case['trial_id']]
+    print(case['trial_id'], case['review']['verdict'], audit['status'])
+PY
+```
 
-This is evidence for the reviewer subsystem in the cloud validation environment. It does not establish a rendered PowerPoint release, a real desktop-host invocation, installation or Daily Lesson Pack integration. The installed timetable-only Guided Reading boundary remains untouched.
+This replays retained records. It neither dispatches fresh model reviewers nor converts subjective reading-pitch judgements into empirical classroom or readability measurements.
 
-1. Resolve the frozen positive/parity corpus deficiencies in a separately versioned fixture design; retain this baseline and predeclare replacement expectations before a fresh run.
-2. Complete the standalone rendered-pack and real-host tests, including editable text, full-size slide inspection, copy counts, visual restrictions and teacher/student parity.
-3. Before any umbrella integration, satisfy the existing integration contract, including both Weeks 1–6 and post-Week-6 pack tests, staged replacement, dependency closure and rollback.
+## Remaining release boundary
 
-Keep PR3 draft. Do not merge, install or describe the component as production-authoritative on this evidence alone.
+Keep the PR draft. Do not merge, install, deploy, schedule or describe it as production-authoritative on this evidence alone.
+
+- Verify actual PowerPoint opening/editing, repair warnings, font behaviour, screen-reader order and physical/PowerPoint print preview
+- Resolve current teaching dates, timetable and assessment inputs before producing a current-week classroom pack
+- Complete a Weeks 1–6 curriculum-aligned forward pack in addition to the post-Week-6 sample
+- Follow the existing staged integration, dependency-closure and rollback contract before any explicitly approved DLP integration
+
+The installed timetable-only Guided Reading boundary remains untouched. The inherited extreme-malformed-nesting limitation for direct Python callers remains disclosed; the documented CLI returns a FAIL audit for that case.

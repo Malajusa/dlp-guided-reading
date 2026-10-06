@@ -84,6 +84,8 @@ Teacher assessment is authoritative. Do not reassess students, change membership
 
 ## Create PowerPoint outputs
 
+For both decks, use the installed Presentations skill's current required authoring and validation workflow (currently artifact-tool). Preserve source provenance in PowerPoint speaker notes, render and visually inspect every slide at full size, and run the skill's overflow checks before release.
+
 Produce one Shared Reading projection deck and one editable Guided Reading print deck containing all five teacher sheets and seven complete student copies per group. Use exact A4 landscape for the print deck. Keep instructional text editable and visuals separate.
 
 Printing one copy of the complete guided deck must yield one teacher sheet and seven complete student sets per scheduled group.
