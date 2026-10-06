@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "verified_on": "2026-10-06",
+  "baseline_commit": "5e52b3cc38e03ba32f00a724e74464a99f6de055",
+  "baseline_git_blobs_verified": 35,
+  "test_command": "python -m unittest discover -s tests -v",
+  "test_count": 38,
+  "exit_code": 0,
+  "test_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "jsonschema": "4.26.0"
+  },
+  "approved_patch_file_sha256": {
+    "SKILL.md": "e35415863c80bc9b2ac6b617b340b79251f72e4ee874aa9bfc9bf9fc78c9d9cd",
+    "tests/test_skill_pitch_gate_contracts.py": "c1f38cea08e100b22cde9c08815ba5195df9c459a648aa800870ce9c8e279277",
+    "tests/test_published_schema_contracts.py": "e114f9b226b6ed3b3325754b0a3b2157fe369b505602d83babfea0abe176e77c"
+  },
+  "schema_sha256": {
+    "agents/schemas/orchestration-state.schema.json": "9c308c627edc46625707f8d7f1be5aa652a94010fb0978f0899bc5c03aac23cf",
+    "agents/schemas/pitch-review.schema.json": "706152535dac4915ba1fe666a303dde38ba3871c93279e4782931c913c75d225",
+    "agents/schemas/progression-review.schema.json": "b88792ac250ed3a02bb25e626c6a10bf254ab78cfcefd1a794398a54dd2f4f33"
+  },
+  "fresh_test_log": "test_level_roles_are_group_specific_and_fail_closed (test_agent_role_contracts.RoleContractTests.test_level_roles_are_group_specific_and_fail_closed) ... ok\ntest_progression_role_contract (test_agent_role_contracts.RoleContractTests.test_progression_role_contract) ... ok\ntest_writer_cannot_self_approve (test_agent_role_contracts.RoleContractTests.test_writer_cannot_self_approve) ... ok\ntest_excessive_nesting_writes_fail_audit (test_pitch_review_schema_integrity.MalformedPackageCliTests.test_excessive_nesting_writes_fail_audit) ... ok\ntest_oversized_integer_writes_fail_audit (test_pitch_review_schema_integrity.MalformedPackageCliTests.test_oversized_integer_writes_fail_audit) ... ok\ntest_level_notes_require_string_items (test_pitch_review_schema_integrity.ReviewSchemaIntegrityTests.test_level_notes_require_string_items) ... ok\ntest_level_review_rejects_unknown_fields (test_pitch_review_schema_integrity.ReviewSchemaIntegrityTests.test_level_review_rejects_unknown_fields) ... ok\ntest_malformed_level_verdict_fails_without_exception (test_pitch_review_schema_integrity.ReviewSchemaIntegrityTests.test_malformed_level_verdict_fails_without_exception) ... ok\ntest_malformed_progression_verdict_fails_without_exception (test_pitch_review_schema_integrity.ReviewSchemaIntegrityTests.test_malformed_progression_verdict_fails_without_exception) ... ok\ntest_progression_notes_require_string_items (test_pitch_review_schema_integrity.ReviewSchemaIntegrityTests.test_progression_notes_require_string_items) ... ok\ntest_progression_review_rejects_unknown_fields (test_pitch_review_schema_integrity.ReviewSchemaIntegrityTests.test_progression_review_rejects_unknown_fields) ... ok\ntest_all_published_schemas_are_well_formed (test_published_schema_contracts.PublishedSchemaContractTests.test_all_published_schemas_are_well_formed) ... ok\ntest_orchestration_accepts_representative_states_and_cycle_boundaries (test_published_schema_contracts.PublishedSchemaContractTests.test_orchestration_accepts_representative_states_and_cycle_boundaries) ... ok\ntest_orchestration_rejects_malformed_states (test_published_schema_contracts.PublishedSchemaContractTests.test_orchestration_rejects_malformed_states) ... ok\ntest_progression_accepts_representative_record (test_published_schema_contracts.PublishedSchemaContractTests.test_progression_accepts_representative_record) ... ok\ntest_progression_rejects_malformed_records (test_published_schema_contracts.PublishedSchemaContractTests.test_progression_rejects_malformed_records) ... ok\ntest_each_assigned_role_group_pair_is_schema_valid (test_schema_role_binding.SchemaRoleBindingTests.test_each_assigned_role_group_pair_is_schema_valid) ... ok\ntest_every_mismatched_role_group_pair_is_schema_invalid (test_schema_role_binding.SchemaRoleBindingTests.test_every_mismatched_role_group_pair_is_schema_invalid) ... ok\ntest_override_documentation_states_no_bypass (test_schema_role_binding.SchemaRoleBindingTests.test_override_documentation_states_no_bypass) ... ok\ntest_teacher_override_metadata_cannot_bypass_non_pass (test_schema_role_binding.SchemaRoleBindingTests.test_teacher_override_metadata_cannot_bypass_non_pass) ... ok\ntest_orchestration_order_and_isolation (test_skill_pitch_gate_contracts.SkillPitchGateContracts.test_orchestration_order_and_isolation) ... ok\ntest_powerpoint_contract_retains_review_evidence (test_skill_pitch_gate_contracts.SkillPitchGateContracts.test_powerpoint_contract_retains_review_evidence) ... ok\ntest_production_standard_release_gate (test_skill_pitch_gate_contracts.SkillPitchGateContracts.test_production_standard_release_gate) ... ok\ntest_skill_explicitly_retains_authoring_workflow (test_skill_pitch_gate_contracts.SkillPitchGateContracts.test_skill_explicitly_retains_authoring_workflow) ... ok\ntest_skill_makes_pitch_gate_mandatory (test_skill_pitch_gate_contracts.SkillPitchGateContracts.test_skill_makes_pitch_gate_mandatory) ... ok\ntest_changed_passage_after_approval_fails (test_validate_pitch_review_package.ReviewPackageTests.test_changed_passage_after_approval_fails) ... ok\ntest_forbidden_placement_change_field_fails (test_validate_pitch_review_package.ReviewPackageTests.test_forbidden_placement_change_field_fails) ... ok\ntest_malformed_dimensions_fail (test_validate_pitch_review_package.ReviewPackageTests.test_malformed_dimensions_fail) ... ok\ntest_missing_group_review_fails (test_validate_pitch_review_package.ReviewPackageTests.test_missing_group_review_fails) ... ok\ntest_parity_reject_set_fails (test_validate_pitch_review_package.ReviewPackageTests.test_parity_reject_set_fails) ... ok\ntest_parity_revise_levels_fails (test_validate_pitch_review_package.ReviewPackageTests.test_parity_revise_levels_fails) ... ok\ntest_pass_with_required_revision_fails (test_validate_pitch_review_package.ReviewPackageTests.test_pass_with_required_revision_fails) ... ok\ntest_reject_verdict_fails_release_package (test_validate_pitch_review_package.ReviewPackageTests.test_reject_verdict_fails_release_package) ... ok\ntest_revise_verdict_fails_release_package (test_validate_pitch_review_package.ReviewPackageTests.test_revise_verdict_fails_release_package) ... ok\ntest_revision_cycle_above_three_fails (test_validate_pitch_review_package.ReviewPackageTests.test_revision_cycle_above_three_fails) ... ok\ntest_stale_level_hash_fails (test_validate_pitch_review_package.ReviewPackageTests.test_stale_level_hash_fails) ... ok\ntest_stale_progression_hash_fails (test_validate_pitch_review_package.ReviewPackageTests.test_stale_progression_hash_fails) ... ok\ntest_valid_package_passes (test_validate_pitch_review_package.ReviewPackageTests.test_valid_package_passes) ... ok\n\n----------------------------------------------------------------------\nRan 38 tests in 0.135s\n\nOK\n",
+  "recorded_overnight_mutation_checks": [
+    {
+      "mutation": "progression_missing_group",
+      "schema": "progression-review.schema.json",
+      "exit_code": 1,
+      "expected_result": "new persistent schema tests reject the deliberately weakened/malformed contract",
+      "detected": true
+    },
+    {
+      "mutation": "progression_bad_verdict",
+      "schema": "progression-review.schema.json",
+      "exit_code": 1,
+      "expected_result": "new persistent schema tests reject the deliberately weakened/malformed contract",
+      "detected": true
+    },
+    {
+      "mutation": "state_wrong_boolean",
+      "schema": "orchestration-state.schema.json",
+      "exit_code": 1,
+      "expected_result": "new persistent schema tests reject the deliberately weakened/malformed contract",
+      "detected": true
+    },
+    {
+      "mutation": "state_cycle_ceiling",
+      "schema": "orchestration-state.schema.json",
+      "exit_code": 1,
+      "expected_result": "new persistent schema tests reject the deliberately weakened/malformed contract",
+      "detected": true
+    },
+    {
+      "mutation": "malformed_schema",
+      "schema": "progression-review.schema.json",
+      "exit_code": 1,
+      "expected_result": "new persistent schema tests reject the deliberately weakened/malformed contract",
+      "detected": true
+    }
+  ],
+  "scope": "Fresh deterministic tests of the exact restored approved patch; behavioural and rendered evidence are separately dated recorded runs. No install, deploy or merge."
+}
