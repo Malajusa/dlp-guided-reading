@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "pitch-review.schema.json",
+  "$comment": "Nonempty prose patterns explicitly match Python str.strip whitespace, avoiding engine-dependent whitespace classes.",
   "title": "Level Pitch Review",
   "type": "object",
   "additionalProperties": false,
@@ -10,23 +11,23 @@
     "group": {"enum": ["Alpha", "Beta", "Gamma", "Delta", "Epsilon"]},
     "passage_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
     "verdict": {"enum": ["PASS", "REVISE", "REJECT"]},
-    "pitch_summary": {"type": "string", "minLength": 1},
+    "pitch_summary": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
     "dimension_findings": {
       "type": "object",
       "additionalProperties": false,
       "required": ["decoding", "vocabulary_morphology", "syntax", "cohesion", "background_knowledge", "evidence_distance", "inference_ambiguity", "response_demand", "age_appropriateness", "visual_support", "conceptual_parity"],
       "properties": {
-        "decoding": {"type": "string", "minLength": 1},
-        "vocabulary_morphology": {"type": "string", "minLength": 1},
-        "syntax": {"type": "string", "minLength": 1},
-        "cohesion": {"type": "string", "minLength": 1},
-        "background_knowledge": {"type": "string", "minLength": 1},
-        "evidence_distance": {"type": "string", "minLength": 1},
-        "inference_ambiguity": {"type": "string", "minLength": 1},
-        "response_demand": {"type": "string", "minLength": 1},
-        "age_appropriateness": {"type": "string", "minLength": 1},
-        "visual_support": {"type": "string", "minLength": 1},
-        "conceptual_parity": {"type": "string", "minLength": 1}
+        "decoding": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
+        "vocabulary_morphology": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
+        "syntax": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
+        "cohesion": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
+        "background_knowledge": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
+        "evidence_distance": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
+        "inference_ambiguity": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
+        "response_demand": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
+        "age_appropriateness": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
+        "visual_support": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
+        "conceptual_parity": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"}
       }
     },
     "blocking_issues": {"type": "array", "items": {"type": "string"}},

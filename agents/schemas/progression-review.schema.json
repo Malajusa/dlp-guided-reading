@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "progression-review.schema.json",
+  "$comment": "Nonempty prose patterns explicitly match Python str.strip whitespace, avoiding engine-dependent whitespace classes.",
   "title": "Progression and Parity Review",
   "type": "object",
   "additionalProperties": false,
@@ -20,7 +21,7 @@
         "Epsilon": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
       }
     },
-    "pitch_progression_summary": {"type": "string", "minLength": 1},
+    "pitch_progression_summary": {"type": "string", "minLength": 1, "pattern": "[^\\u0009-\\u000D\\u001C-\\u0020\\u0085\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]"},
     "blocking_issues": {"type": "array", "items": {"type": "string"}},
     "required_revisions": {
       "type": "object",

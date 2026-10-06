@@ -2,7 +2,7 @@
 
 Status: **reviewer subsystem and controlled rendered sample validated within the scopes below; draft, unmerged and uninstalled**
 
-Updated 6 October 2026. The current complete deterministic suite passes **42/42**. A narrow schema follow-up to published commit `87904cfe7f88e23e82e6cbaccbe2cdca38806d50` makes PASS records require empty blockers and revisions, matching the unchanged fail-closed production validator. The earlier three-file authoring/schema-test reconciliation remains the preserved 38-test checkpoint.
+Updated 6 October 2026. The current complete deterministic suite passes **45/45**. The schema follow-ups require empty blockers/revisions on PASS and reject whitespace-only review summaries and dimension findings, matching the unchanged production validator's existing checks. The earlier authoring/schema-test reconciliation and PASS-collection fix remain preserved 38-test and 42-test checkpoints.
 
 ## Evidence layers
 
@@ -12,7 +12,8 @@ Updated 6 October 2026. The current complete deterministic suite passes **42/42*
 | First repaired checkpoint | 20/20, then 28/28 | Contract repairs and eight validator regressions |
 | Published follow-up `5e52b3c` | 32/32 | Role/group schema binding and explicit no-override-bypass coverage |
 | Published reconciliation `87904cf` | 38/38 | Explicit both-deck authoring workflow and persistent checks for all three schemas |
-| Current PASS-schema follow-up | **42/42** | Four regressions and verdict-dependent empty-blocker/revision constraints |
+| Published PASS-schema follow-up `8eb7ef0` | 42/42 | Four regressions and verdict-dependent empty-blocker/revision constraints |
+| Current nonempty-prose follow-up | **45/45** | Three regression methods cover both summaries and all eleven dimension findings, including Unicode whitespace |
 | Frozen v1 behavioural corpus | 7 expected catches; 5 positive mismatches; 2 invalid-prerequisite parity cases | Historical outcomes remain unchanged |
 | Separately frozen v2.0.1 core cases | **12/12 expected outcomes** | Five complete new positives pass; seven unchanged negative cases are caught |
 | V2 positive parity | **PASS** | Five real current individual approvals preceded set review; production gate PASS |
@@ -42,7 +43,15 @@ The 38-test reconciliation changed only `SKILL.md`, `tests/test_skill_pitch_gate
 
 Two subsequent review findings were reproduced: both review schemas accepted PASS records containing unresolved blockers or required revisions although the production gate rejected them. Four new regression methods failed against `87904cf` before the fix (five failing subcases, including a progression revision map containing `{"Alpha": []}`). The schemas now require empty blocker arrays and empty revision arrays/maps only when the verdict is PASS. Non-PASS revision/rejection records retain their existing schema validity and still cannot release a package.
 
-The complete suite passes 42 tests, including all three meta-schema checks. Recorded V2 replay validates all 15 standalone level reviews, both set reviews and their 10 embedded level reviews against the updated schemas. The positive set still produces production PASS and the duplicate set produces FAIL. The original forward package remains PASS; its stale-Epsilon mutation remains FAIL. Production validator bytes, reviewer content, frozen fixtures and all recorded evidence are unchanged. These are deterministic checks and retained-record replays; no new model run or slide render is claimed.
+That checkpoint passed 42 tests, including all three meta-schema checks. Recorded V2 replay validated all 15 standalone level reviews, both set reviews and their 10 embedded level reviews against the updated schemas. The positive set produced production PASS and the duplicate set produced FAIL. The original forward package remained PASS; its stale-Epsilon mutation remained FAIL.
+
+### Nonempty-prose consistency follow-up
+
+The next review identified whitespace-only summaries passing JSON Schema while failing the production validator's `str.strip()` check. The identical issue also affected all eleven dimension findings. Three regression methods first reproduced the discrepancy against `8eb7ef0` (403 failing subcases), then passed after adding explicit non-whitespace patterns to the thirteen affected fields. Tests cover each of Python's 29 whitespace characters, combined whitespace, newlines, nonempty prose and characters Python does not strip. These are consistency checks, not a new judgement of prose quality.
+
+The explicit character class avoids relying on engine-specific shorthand whitespace classes: [JSON Schema patterns use ECMAScript syntax](https://json-schema.org/understanding-json-schema/reference/regular_expressions), while the production rule is [Python string stripping](https://docs.python.org/3/library/stdtypes.html#str.strip). The production validator remains unchanged.
+
+The current complete suite passes 45 tests, including all three meta-schema checks. All 27 recorded V2 reviews remain schema-valid, both V2 release outcomes remain correct, and the original forward/stale-package replay remains PASS/FAIL. Production validator bytes, reviewer content, frozen fixtures and all recorded evidence are unchanged. These are deterministic checks and retained-record replays; no new model run or slide render is claimed.
 
 ## Preserved behavioural history
 
