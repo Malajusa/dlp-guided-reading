@@ -2,7 +2,7 @@
 
 Status: **reviewer subsystem and controlled rendered sample validated within the scopes below; draft, unmerged and uninstalled**
 
-Updated 6 October 2026. The final three-file reconciliation was applied to a clean reconstruction of published commit `5e52b3cc38e03ba32f00a724e74464a99f6de055`. All 35 baseline files matched their GitHub Git-blob hashes. The restored patch files matched the exact approved artifact hashes, and the current complete deterministic suite passes **38/38**.
+Updated 6 October 2026. The current complete deterministic suite passes **42/42**. A narrow schema follow-up to published commit `87904cfe7f88e23e82e6cbaccbe2cdca38806d50` makes PASS records require empty blockers and revisions, matching the unchanged fail-closed production validator. The earlier three-file authoring/schema-test reconciliation remains the preserved 38-test checkpoint.
 
 ## Evidence layers
 
@@ -11,7 +11,8 @@ Updated 6 October 2026. The final three-file reconciliation was applied to a cle
 | Original source baseline `6239dcf` | 18/20 | Two pre-existing documentation-contract mismatches were reproduced |
 | First repaired checkpoint | 20/20, then 28/28 | Contract repairs and eight validator regressions |
 | Published follow-up `5e52b3c` | 32/32 | Role/group schema binding and explicit no-override-bypass coverage |
-| Current reconciliation | **38/38** | Explicit both-deck authoring workflow and persistent checks for all three schemas |
+| Published reconciliation `87904cf` | 38/38 | Explicit both-deck authoring workflow and persistent checks for all three schemas |
+| Current PASS-schema follow-up | **42/42** | Four regressions and verdict-dependent empty-blocker/revision constraints |
 | Frozen v1 behavioural corpus | 7 expected catches; 5 positive mismatches; 2 invalid-prerequisite parity cases | Historical outcomes remain unchanged |
 | Separately frozen v2.0.1 core cases | **12/12 expected outcomes** | Five complete new positives pass; seven unchanged negative cases are caught |
 | V2 positive parity | **PASS** | Five real current individual approvals preceded set review; production gate PASS |
@@ -33,9 +34,15 @@ Local/workspace test results are not hosted CI results. The previously observed 
 
 The last item is an entrypoint/scope clarification. Those authoring requirements already survived through mandatory references; no effective workflow bypass was demonstrated. The surviving workflow sentence sat under Guided print geometry, so stating both-deck scope directly avoids ambiguity.
 
-The final reconciliation changes only `SKILL.md`, `tests/test_skill_pitch_gate_contracts.py` and the new `tests/test_published_schema_contracts.py`. Runtime validators, schema definitions, profile assignments, reviewer authority, original fixtures and sample content are unchanged by that reconciliation. Persistent tests now cover all three meta-schemas plus representative valid/invalid progression and orchestration records. Deliberate schema weakening/malformation checks showed those tests detect the intended defects. The production validator remains standard-library-only; `jsonschema` is a declared test-only dependency.
+The 38-test reconciliation changed only `SKILL.md`, `tests/test_skill_pitch_gate_contracts.py` and the new `tests/test_published_schema_contracts.py`. Runtime validators, schema definitions, profile assignments, reviewer authority, original fixtures and sample content were unchanged by that reconciliation. Persistent tests cover all three meta-schemas plus representative valid/invalid progression and orchestration records. Deliberate schema weakening/malformation checks showed those tests detect the intended defects. The production validator remains standard-library-only; `jsonschema` is a declared test-only dependency.
 
-[Current patch and test evidence](2026-10-06-patch-validation.json) records exact source identities and the fresh test log. The earlier [hosted-review follow-up](2026-10-05-hosted-review-followup.md) remains a 32-test historical checkpoint, not the current headline.
+[38-test patch and test evidence](2026-10-06-patch-validation.json) records that checkpoint's exact source identities and test log. The earlier [hosted-review follow-up](2026-10-05-hosted-review-followup.md) remains a 32-test historical checkpoint, not the current headline.
+
+### PASS-schema consistency follow-up
+
+Two subsequent review findings were reproduced: both review schemas accepted PASS records containing unresolved blockers or required revisions although the production gate rejected them. Four new regression methods failed against `87904cf` before the fix (five failing subcases, including a progression revision map containing `{"Alpha": []}`). The schemas now require empty blocker arrays and empty revision arrays/maps only when the verdict is PASS. Non-PASS revision/rejection records retain their existing schema validity and still cannot release a package.
+
+The complete suite passes 42 tests, including all three meta-schema checks. Recorded V2 replay validates all 15 standalone level reviews, both set reviews and their 10 embedded level reviews against the updated schemas. The positive set still produces production PASS and the duplicate set produces FAIL. The original forward package remains PASS; its stale-Epsilon mutation remains FAIL. Production validator bytes, reviewer content, frozen fixtures and all recorded evidence are unchanged. These are deterministic checks and retained-record replays; no new model run or slide render is claimed.
 
 ## Preserved behavioural history
 

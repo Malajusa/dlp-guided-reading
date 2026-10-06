@@ -1,6 +1,6 @@
 # Hosted review follow-up
 
-Historical checkpoint at commit `5e52b3cc38e03ba32f00a724e74464a99f6de055`: 32 tests. For the current 38-test result and subsequent evidence, see [the current validation report](level-pitch-agent-validation.md). The original checkpoint findings below are retained.
+Historical checkpoint at commit `5e52b3cc38e03ba32f00a724e74464a99f6de055`: 32 tests. For the current result and subsequent evidence, see [the current validation report](level-pitch-agent-validation.md). The original checkpoint findings below are retained.
 
 
 The 28-test run above is the preserved publication checkpoint at `83fe5c81e382468f34f9b447fa4af56ac0bffc0d`. A subsequent hosted review identified a real cross-field gap in the published level schema. The schema now rejects all 20 mismatched role/group combinations and accepts the five assigned pairs, matching the Python validator. Four focused regression/contract tests bring the current suite to **32 tests, all passing**. JSON Schema checks use the declared development-only dependency in `requirements-dev.txt`; the production validator remains standard-library-only.
@@ -40,5 +40,4 @@ PYCODE
 ```
 
 This replay deliberately exposes the five positive mismatches and two invalid-prerequisite cases; it does not turn them into behavioural passes. The original evidence file remains frozen. New corpus work is separately versioned.
-
 

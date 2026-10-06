@@ -33,6 +33,13 @@
     "required_revisions": {"type": "array", "items": {"type": "string"}},
     "non_blocking_notes": {"type": "array", "items": {"type": "string"}}
   },
+  "if": {"properties": {"verdict": {"const": "PASS"}}, "required": ["verdict"]},
+  "then": {
+    "properties": {
+      "blocking_issues": {"maxItems": 0},
+      "required_revisions": {"maxItems": 0}
+    }
+  },
   "oneOf": [
     {"properties": {"reviewer_role": {"const": "alpha-pitch-reviewer"},"group": {"const": "Alpha"}}},
     {"properties": {"reviewer_role": {"const": "beta-pitch-reviewer"},"group": {"const": "Beta"}}},
